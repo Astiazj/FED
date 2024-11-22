@@ -43,8 +43,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/home_kleinekomedie.png" width="375px" alt="Homepagina Kleine Komedie">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  About Moco 
-  <img src="readme-images/agenda_kleinekomedie.png_kleinekomedie.png" width="375px" alt="Agendapagina Kleine Komedie">
+  Agenda 
+  <img src="readme-images/agenda_kleinekomedie.png" width="375px" alt="Agendapagina Kleine Komedie">
  
 </details>
 
