@@ -29,3 +29,25 @@
 
 /* jouw code */
 
+
+
+
+
+/* BUTTON HALVE CIRKEL (BRON: SANNE)
+a {
+	display:inline-flex;
+	height:4em;
+	padding: 1em 1em 1em 3em;
+
+	background:lightgreen;
+	align-items:center;
+
+	background-image: 
+	radial-gradient(
+		circle at left center,
+		red 0 2em, 
+		green 2em 100%
+		);
+}
+*/
+

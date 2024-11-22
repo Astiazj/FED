@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   About Moco 
-  <img src="readme-images/steunons_kleinekomedie.png" width="375px" alt="Steun Ons Pagina">
+  <img src="readme-images/agenda_kleinekomedie.png_kleinekomedie.png" width="375px" alt="Agendapagina Kleine Komedie">
  
 </details>
 
@@ -60,6 +60,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Images worden volledig overgeslagen
   - Alleen de links worden gelezen
   - Broodteksten binnen een card worden overgeslagen
+  - Op verschillende plekken staan errors in de code
+  - De website draait niet mee als de telefoon 180 graden wordt gedraaid
+  - De interactieve elementen staan te dicht op elkaar
+  - Voor de shows wordt geen list gebruikt
+  - Afbeeldingen bevatten geen alt-tekst
+  - Er wordt alleen href voor links gebruikt (geen a)
+  - Button element wordt niet gebruikt
+  - Niet duidelijk dat een nieuwe pagina wordt geopend met screenreader
+  - Dark mode wordt niet ondersteund
 
 </details>
 
@@ -71,13 +80,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets_home.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### dynamisch deel (hamburgermenu?): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdownschets_filter.jpg" width="375px" alt="breakdown van filter, agendapagina">
 
 </details>
 
@@ -92,6 +101,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Goed:
+  - Breakdownschets homepagina vertalen naar HTML
+  - Korte opdrachten in de les
+
+  Lastig:
+  - Breakdownschets filter --> welke elementen worden voor wat gebruikt?
+  - Verschillen flexbox en grid en het toepassen hiervan
+  - Toegankelijkheid checken bij de originele website
 
 
   ### Agenda voor meeting
