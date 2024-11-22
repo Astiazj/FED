@@ -116,10 +116,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Joshua         | Julian             | Alycia       |
   | ---            | ---                | ---          |
-  | Wanneer nieuwe section, wanneer past het gewoon binnen de parent? | Wanneer grid en wanneer flexbox?  | en ik dit    |
-  | Tekst selecteren met toetsenbord (tab of iets anders?) | Wat wordt er precies verwacht van ons qua toegankelijkheid? Verwijst naar toegankelijkheids blad van week vorige week. | nog een punt |
-  | Wanneer grid, wanneer flexbox? | Het minimale aantal van 3 CSS files.  | nog een punt |
-  | Breakdownschets | Functies binnen de website? (Surface plane) | nog een punt |
+  | Wanneer nieuwe section, wanneer past het gewoon binnen de parent? | Wanneer grid en wanneer flexbox?  | Tekst op een image    |
+  | Tekst selecteren met toetsenbord (tab of iets anders?) | Wat wordt er precies verwacht van ons qua toegankelijkheid? Verwijst naar toegankelijkheids blad van week vorige week. |  |
+  | Wanneer grid, wanneer flexbox? | Het minimale aantal van 3 CSS files.  |  |
+  | Breakdownschets | Functies binnen de website? (Surface plane) |  |
 
 
   ### Verslag van meeting
