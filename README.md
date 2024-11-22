@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
 
   #### Je focus:
-  Surface plane
+  Responsiveness
  
 </details>
 
@@ -57,6 +57,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - Images worden volledig overgeslagen
+  - Alleen de links worden gelezen
+  - Broodteksten binnen een card worden overgeslagen
 
 </details>
 
@@ -94,11 +97,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Joshua         | Julian             | Alycia       |
+  | ---            | ---                | ---          |
+  | Wanneer nieuwe section, wanneer past het gewoon binnen de parent? | en dit             | en ik dit    |
+  | Tekst selecteren met toetsenbord (tab of iets anders?) | dit als er tijd is | nog een punt |
+  | Wanneer grid, wanneer flexbox? | dit als er tijd is | nog een punt |
+  | Breakdownschets | dit als er tijd is | nog een punt |
 
 
   ### Verslag van meeting
