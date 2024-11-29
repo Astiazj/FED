@@ -155,8 +155,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Joshua      | Julian         | Joost   |
   | ---            | ---                | ---          |
   |  Fonts (hoe toe te voegen vanuit file, mag ook vanuit adobe fonts ook met js?) | Welke vorm van afbeeldingen zijn het beste voor toegankelijkheid  | tekst op afbeeldingen    |
-  | iconen die geen images zijn | dit als er tijd is | nog een punt |
+  | iconen die geen images zijn | ... | grid |
   | image uit de section achter elementen van de header       | ...                | ...          |
+  | viewport issues | ... | ... |
 
 
   ### Verslag van meeting

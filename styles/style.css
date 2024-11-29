@@ -145,6 +145,8 @@ main section:nth-of-type(1) h2 {
 
 main section:nth-of-type(1) p {
 	display: flex;
+	font-family: 'DINB';
+	font-weight: normal;
 	background-color: var(--huiskleur);
 	grid-column: 2/-2;
 	grid-row:3/4;
@@ -200,11 +202,59 @@ main section:nth-of-type(1) img {
 	grid-row: 1/-1;
 }
 
-main ul:first-of-type {
+main ul {
 	list-style: none;
-	padding: none;
-	margin: none;
 }
+
+main ul:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 1em;
+}
+
+main ul:first-of-type li {
+	display: grid;
+	color: var(--color-background);
+	grid-template-columns: 10em auto;
+	grid-template-rows: 20em 1fr 1fr 1fr 1fr 2em;
+	margin-bottom: 1em;
+}
+
+main ul:first-of-type img {
+	z-index: -10;
+	width: 100%;
+	height: auto;
+	align-self: stretch;
+	object-fit: cover;
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+}
+
+main ul:first-of-type h2 {
+	grid-column: 1/-1;
+	grid-row:2/3;
+}
+
+main ul:first-of-type h3 {
+	grid-column: 1/-1;
+	grid-row:3/4;
+}
+
+main ul:first-of-type p {
+	grid-column: 1/-1;
+	grid-row:4/5;
+}
+
+main ul:first-of-type a {
+	grid-column: 1/-1;
+	grid-row:5/6;
+}
+
+
+
+
+
 
 
 
