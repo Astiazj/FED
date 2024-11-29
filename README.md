@@ -125,10 +125,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Flexbox - Grid --> Flexbox voor algemenere layout, grid voor specifiekere layout
+  - Tekst selecteren --> met semantische HTML komt dat automatisch goed
+  - Main css --> styling tekst, nav, basic styling
+  - light & dark mode toevoegen
+  - Image gebruiken voor logo en dan onzichtbare h1
+  - met comments onderdelen aangeven
+  - a met img erin bij social media
+
 
 </details>
 

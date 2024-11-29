@@ -17,9 +17,8 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--huiskleur:#E31818;
 }
-
-
 
 
 
@@ -29,9 +28,77 @@
 
 /* jouw code */
 
+/****************** #HEADER ******************/
+
+/* vragen */
+
+@font-face {
+	font-family: 'DINB';
+	font-weight: light;
+	src: url("/fonts/din/din300.otf");
+}
+
+@font-face {
+	font-family: 'DINB';
+	font-weight: normal;
+	src: url("/fonts/din/din400.otf");
+}
+
+@font-face {
+	font-family: 'DINB';
+	font-weight: medium;
+	src: url("/fonts/din/din500.otf");
+}
+
+@font-face {
+	font-family: 'DINB';
+	font-weight: bold;
+	src: url("/fonts/din/din700.otf");
+}
+
+/* Bron: Thomas Norden & https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually_hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+ }
+
+header {
+	display: flex;
+}
+
+header section:nth-of-type(1){
+	margin-left:1em;
+	background-color: var(--color-text);
+	display: flex;
+ }
+
+ header section:nth-of-type(1) img{
+	flex-direction: column;
+	width:13em;
+	margin:0em;
+	justify-content: center;
+	padding: 0em;
+ }
+
+ header ul {
+	display: flex;
+	list-style-type: none;
+ }
+
+ header ul img {
+	width: 3em;
+ }
 
 
+ /* ****************#EINDEHEADER***************** */
 
+
+ 
 
 
 /* BUTTON HALVE CIRKEL (BRON: SANNE)
