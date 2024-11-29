@@ -152,11 +152,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Joshua      | Julian         | Joost   |
+  | ---            | ---                | ---          |
+  |  Fonts (hoe toe te voegen vanuit file, mag ook vanuit adobe fonts ook met js?) | Welke vorm van afbeeldingen zijn het beste voor toegankelijkheid  | tekst op afbeeldingen    |
+  | iconen die geen images zijn | dit als er tijd is | nog een punt |
+  | image uit de section achter elementen van de header       | ...                | ...          |
 
 
   ### Verslag van meeting

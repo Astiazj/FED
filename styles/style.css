@@ -18,6 +18,10 @@
 	--color-text:#111;
 	--color-background:#eee;
 	--huiskleur:#E31818;
+	--winkelwagentje:#EEBE30;
+	--zoeken:#C3094A;
+	--hamburgermenu:#990008;
+	--achtergrond:#F5F5EC;
 }
 
 
@@ -27,6 +31,13 @@
 /****************/
 
 /* jouw code */
+
+body {
+	margin: 0;
+	background-color: var(--achtergrond);
+}
+
+
 
 /****************** #HEADER ******************/
 
@@ -65,7 +76,7 @@
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
- }
+}
 
 header {
 	display: flex;
@@ -73,49 +84,140 @@ header {
 
 header section:nth-of-type(1){
 	margin-left:1em;
-	background-color: var(--color-text);
+	background-color: var(--color-background);
 	display: flex;
- }
+}
 
- header section:nth-of-type(1) img{
+header section:nth-of-type(1) img{
 	flex-direction: column;
 	width:13em;
 	margin:0em;
 	justify-content: center;
 	padding: 0em;
- }
+}
 
- header ul {
+header ul {
 	display: flex;
 	list-style-type: none;
- }
+	margin: 0;
+	right: 0;
+}
 
- header ul img {
+header ul img {
 	width: 3em;
- }
+}
 
+header li:nth-of-type(1) {
+	background-color: var(--winkelwagentje);
+}
+
+header li:nth-of-type(2) {
+	background-color: var(--zoeken);
+}
+
+header li:nth-of-type(3) {
+	background-color: var(--hamburgermenu);
+}
 
  /* ****************#EINDEHEADER***************** */
 
-
+/****************** #MAIN *************************/
  
+main section:nth-of-type(1) {
+	display: grid;
+	grid-template-columns: 1fr 20em 1fr;
+	grid-template-rows: 20em 1fr 1fr 1fr 2em;
+	/* hoe werkt het met alt tekst op een background image? */
+	/* background-image: url(/images/header_img.jpg); */
+}
 
+main section:nth-of-type(1) h2 {
+	font-family: 'DINB';
+	font-weight: bold;
+	font-size: 1.8em;
+	background-color: var(--huiskleur);
+	grid-column: 2/-2;
+	grid-row:2/3;
+	margin:0;
+	padding: .5em;
+	color: var(--color-background);
+}
 
-/* BUTTON HALVE CIRKEL (BRON: SANNE)
-a {
+main section:nth-of-type(1) p {
+	display: flex;
+	background-color: var(--huiskleur);
+	grid-column: 2/-2;
+	grid-row:3/4;
+	margin: 0em;
+	padding: .3em 1em 1em 0em;
+	color: var(--color-background);
+	align-items: end;
+}
+
+main section:nth-of-type(1) time:nth-of-type(1) {
+	margin-right: .3em;
+	padding-top: .3em;
+}
+
+main section:nth-of-type(1) time:nth-of-type(2) {
+	margin-left: .3em;
+	padding-top: .3em;
+}
+
+main section:nth-of-type(1) a {
+	display: flex;
+	grid-column: 2/-2;
+	grid-row:4/5;
+	margin:0;
+	color: var(--color-background);
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+
+	/* BUTTON HALVE CIRKEL (BRON: SANNE) */
 	display:inline-flex;
 	height:4em;
 	padding: 1em 1em 1em 3em;
 
-	background:lightgreen;
+	background:var(--color-background);
 	align-items:center;
 
 	background-image: 
 	radial-gradient(
 		circle at left center,
-		red 0 2em, 
-		green 2em 100%
+		var(--color-background) 0 2em, 
+		var(--zoeken) 2em 100%
 		);
 }
-*/
+
+main section:nth-of-type(1) img {
+	z-index: -10;
+	width: 100%;
+	height: auto;
+	align-self: stretch;
+	object-fit: cover;
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+}
+
+main ul:first-of-type {
+	list-style: none;
+	padding: none;
+	margin: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
