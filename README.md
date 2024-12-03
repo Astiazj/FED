@@ -163,10 +163,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+- in algemene stylesheet --> max-width 100% image zodat hij niet groter dan de container wordt
+- display block voor geen witruimte tussen de twee items
+- object-fit:cover + height en width 100%
+- vw ipv fr
+- ch = max karakters op een zin.
+- clamp() voor meeschalen tekst
 
 </details>
 

@@ -23,21 +23,25 @@
 			<ul>
 				<li>
 					<a href="#">
-						<!-- mag het op deze manier? en is het een p of h? -->
-						<p class="visually_hidden">winkelwagentje</p>
-						<img src="images/favicon.svg" alt="icoon van een winkelwagentje">
+						<span class="visually_hidden">winkelwagentje</span>
+						<img src="images/winkelwagen.svg" alt=""> <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<p class="visually_hidden">Zoeken</p>
-						<img src="images/favicon.svg" alt="icoon van een vergrootglas">
+						<span class="visually_hidden">Zoeken</span>
+						<img src="images/vergrootglas.svg" alt="">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<p class="visually_hidden">Menu</p>
-						<img src="images/favicon.svg" alt="icoon van een hamburgermenu">
+						<span class="visually_hidden">Menu</span>
+						<!-- bron: https://codepen.io/shooft/pen/JjQLVeB?editors=1000 -->
+						<button aria-label="menu" aria-expanded="false">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
 					</a>
 				</li>
 			</ul>
@@ -52,18 +56,19 @@
 	<main>
 		<!-- mag ik hier wel een div voor gebruiken? -->
 		<section>
-			<h2>Vier kerst met Rayan Panday & friends</h2>
-			<p><time datetime="2024-12-20">vr 20 december</time> t/m <time datetime="2024-12-24">di 24 december</time></p>
-			<a href="#">koop hier je kaarten</a>
+				<h2>Vier kerst met Rayan Panday & friends</h2>
+				<p><time datetime="2024-12-20">vr 20 </time> t/m <time datetime="2024-12-24">di 24 december</time></p>
+				<a href="#">koop hier je kaarten</a>
 			<img src="images/header_img.jpg" alt="foto van Rayan Panday zittend bij een haardvuur">
 		</section>
 
+		<section>
 		<ul>
 			<li>
-				<h2>IDFA in de Kleine Komedie</h2>
+				<h2>Boekenborrel</h2>
 				<h3>Joris Bijdendijk</h3>
-				<p><time datetime="2024-11-15">vr 15 nov</time> - <time datetime="2024-11-18">di 18 nov</time></p>
-				<a href="#">koop hier je kaarten</a>
+				<p><time datetime="2024-12-14 15:00">za 14 dec 15.00 uur </time>-<time datetime="2024-12-14 16:00"> 16.00 uur</time></p>
+				<a href="#">Kaarten</a>
 				<img src="images/boekenborrel.jpg" alt="foto van Joris Bijdendijk">
 			</li>
 
@@ -99,19 +104,20 @@
 				<img src="images/zo_opgelost.jpg" alt="foto van Kirsten van Teijn">
 			</li>
 		</ul>
+	
 
+		<!-- ARTIIKELEN -->
+		<!-- <section> -->
 		<ul>
 			<li> 
 				<article>	<!--articles in zetten-->
-					<h2>gezocht: financieel medewerker</h2>
+					<h2>Vacature: Financieel Medewerker</h2>
+					<img src="images/financiele.webp" alt="bannerfoto vacature">
 					<p><time datetime="2024-11-14">do 14 nov</time></p>
-					<h3>Vacature: Financieel Medewerker</h3>
 					<p>Vacature! We zijn op zoek naar een financieel medewerker voor in ieder geval 6 maanden. 
 						Heb je een scherp oog voor cijfers, weet je alles van grootboekrekeningen, omzetbelastig en facturatie? Vind je het belangrijk om je werk serieus te nemen, maar ben je niet vies van een grapje op zijn tijd? 
 						Dan pas jij perfect in ons team! Kun jij de cijfers laten kloppen én de sfeer luchtig houden? Dan willen we graag met jou kennismaken.</p>
 					<a href="#">lees verder</a>
-					<button aria-label="pijl naar rechts"></button>
-					<button aria-label="pijl naar links"></button>
 				</article>
 			</li>
 
@@ -119,29 +125,25 @@
 				<article>
 					<h2>line-up volmondig 20 november bekend</h2>
 					<p><time datetime="2024-11-01">vr 1 nov</time></p>
-					<img src="images/favicon.svg" alt="foto van man met een microfoon, op de achtergrond twee mannen met een elektrische gitaar vast">
+					<img src="images/volmondig.webp" alt="foto van man met een microfoon, op de achtergrond twee mannen met een elektrische gitaar vast">
 					<p>Aan tafel met Volmondig! Spoken word en spijs. Kunst en kost.
 						Woordchef Luan Buleshkaj presenteert een avond vol
 						smaakvolle woordkunst in KomedieLAB, bij onze buren in Bar
 						Chimi. Luan schotelt ons verschillende acts voor, van kersvers
 						talent tot gevestigde namen. Bekijk de line-up hier.</p>
-					<a href="#">lees verder</a>
-					<button aria-label="pijl naar rechts"></button>
-					<button aria-label="pijl naar links"></button>
+					<a href="#">lees verder</a>	
 				</article>
 			</li>
-
+			
 			<li>
 				<article>
 					<h2>Kaartverkoop IDFA van start</h2>
 					<p><time datetime="2024-10-30">wo 30 okt</time></p>
-					<img src="images/favicon.svg" alt="foto van een theatergebouw">
+					<img src="images/kkbuiten.webp" alt="foto van een theatergebouw">
 					<p>IDFA komt naar De Kleine Komedie! van <time datetime="2024-11-15">vrijdag 15</time> t/m <time datetime="2024-11-18">maandag 18 november</time> verovert de documentaire hier vier dagen lang het theater.
 					De kaartverkoop is gestart, en de documentaires zijn
 					bekend. Ontdek het programma!</p>
 					<a href="#">lees verder</a>
-					<button aria-label="pijl naar rechts"></button>
-					<button aria-label="pijl naar links"></button>
 				</article>
 			</li>
 
@@ -149,15 +151,13 @@
 				<article>
 					<h2>Winnaars Cabaretprijzen</h2>
 					<p><time datetime="2024-10-08">di 8 okt</time></p>
-					<img src="images/favicon.svg" alt="foto van de winnaars van de cabaretprijzen">
+					<img src="images/poeli.webp" alt="foto van de winnaars van de cabaretprijzen">
 					<p><time datetime="2024-10-07">Gisteravond</time> werden de Cabaretprijzen uitgereikt in Theater 
 						Diligentia. Rundfunk, Lisa Ostermann en Peter van Rooijen zijn de winnaars van de Poelifinario. Zij maakten de beste 
 						cabaretprogramma's van afgelopen seizoen. De Neerlands Hoop
 						gaat naar Valentina Tóth. Dé prijs voor het grootste 
 						aanstormende cabarettalent van het seizoen. Wat een gelukvogels!</p>
 					<a href="#">lees verder</a>
-					<button aria-label="pijl naar rechts"></button>
-					<button aria-label="pijl naar links"></button>
 				</article>
 			</li>
 
@@ -165,7 +165,7 @@
 				<article>
 					<h2>Zilveren raampje voor Merijn Scholten</h2>
 					<p><time datetime="2024-10-08">do 26 sep</time></p>
-					<img src="images/favicon.svg" alt="foto van Merijn Scholten op een podium">
+					<img src="images/bloem.webp" alt="foto van Merijn Scholten op een podium">
 					<p><time datetime="2024-09-26">Vanavond</time> speelde Merijn Scholten zijn debuutvoorstelling Team 
 						Solo voor de 24e en allerlaatste keer bij ons voor een 
 						uitverkochte zaal. Nog nooit eerder in de geschiedenis van De
@@ -177,24 +177,26 @@
 						raampje werd eerder uitgereikt aan NUHR, Youpp van 't Hek,
 						Lebbis & Jansen, Diederik van Vleuten en Doesjka van Hoogdalem.</p>
 					<a href="#">lees verder</a>
-					<button aria-label="pijl naar rechts"></button>
-					<button aria-label="pijl naar links"></button>
 				</article>
 			</li>
 		</ul>
+		<button aria-label="pijl naar links"></button>
+		<button aria-label="pijl naar rechts"></button>
+		<!-- </section> -->
+
+		</section>
 
 		<section>
-			<h2>Promotie</h2> 
-			<!-- h2 onzichtbaar maken? of geen h2 gebruiken? -->
+			<h2 class="visually_hidden">Promotie</h2> 
 			<section>
 				<h2>Steun Ons</h2>
 				<p>en doneer</p>
-				<img src="images/XX.png" alt="logo van de kleine komedie">
+				<img src="images/kkrood.webp" alt="logo van de kleine komedie in het rood">
 			</section>
 			<section>
 				<h2>Word Vriend</h2>
 				<p>steun ons</p>
-				<img src="images/XX.png" alt="logo van de kleine komedie">
+				<img src="images/kkpaars.webp" alt="logo van de kleine komedie in het paars">
 			</section>
 		</section>
 
