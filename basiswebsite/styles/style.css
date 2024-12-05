@@ -1,0 +1,284 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+	--huiskleur:#E31818;
+	--winkelwagentje:#EEBE30;
+	--zoeken:#C3094A;
+	--hamburgermenu:#990008;
+	--achtergrond:#FFFFFF;
+}
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+body {
+	margin: 0;
+	background-color: var(--achtergrond);
+	font-family: 'DINB';
+}
+
+
+/****************** #HEADER ******************/
+
+/* vragen */
+
+@font-face {
+	font-family: 'DINB';
+	font-weight: 300;
+	src: url("/fonts/din/din300.otf");
+}
+
+@font-face {
+	font-family: 'DINB';
+	font-weight: normal;
+	src: url("/fonts/din/din400.otf");
+}
+
+@font-face {
+	font-family: 'DINB';
+	font-weight: 500;
+	src: url("/fonts/din/din500.otf");
+}
+
+@font-face {
+	font-family: 'DINB';
+	font-weight: bold;
+	src: url("/fonts/din/din700.otf");
+}
+
+/* Bron: Thomas Norden & https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually_hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	padding: 0 2vw;
+	z-index: 10;
+
+	background-color: white;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+/* @media (width > 37em) {
+header {
+	background-color: transparent;
+}
+
+} */
+
+header section:nth-of-type(1){
+	margin-left:.2em;
+	background-color: var(--color-background);
+	display: flex;
+}
+
+header section:nth-of-type(1) img{
+	flex-direction: column;
+	width:8em;
+	margin:0em;
+	justify-content: center;
+	padding: 0em;
+	background-color: white;
+}
+
+header ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header ul img {
+	width: 2em;
+	margin:0;
+	/* bron: https://codepen.io/sosuke/full/Pjoqqp */
+	filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(185deg) brightness(99%) contrast(102%);
+}
+	
+
+header li {
+	height: 3.5em;
+	width: 3.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header li:nth-of-type(1) {
+	background-color: var(--winkelwagentje);
+}
+
+header li:nth-of-type(2) {
+	background-color: var(--zoeken);
+}
+
+header li:nth-of-type(3) {
+	background-color: var(--hamburgermenu);
+}
+
+/****************** HAMBURGERMENU BRON: ... ******************/
+
+	/* header li:nth-of-type(3) button {
+	display: flex;
+	flex-direction: column;
+
+	width:3em;
+	gap: .2em;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+  }
+  
+  header li:nth-of-type(3) button span {
+	
+	width: 100%;
+	height:.3em;
+	background-color:#fff;
+	border-radius: 2em;
+	
+	transition-duration:.5s;
+  }
+  
+header li:nth-of-type(3) button span:nth-of-type(1) {
+	transform:translateY(-.4em);
+  }
+  
+
+  header li:nth-of-type(3) button span:nth-of-type(3) {
+	transform:translateY(.4em);
+  }  */
+
+/* HAMBURGERMENU SLUITEN */
+	/* header li:nth-of-type(3) button[aria-expanded="true"] span:nth-of-type(1) {
+	transform:rotate(45deg) scalex(1.25);
+  }
+  
+  header li:nth-of-type(3) button[aria-expanded="true"] span:nth-of-type(2) {
+	opacity:0;
+  }
+  
+  header li:nth-of-type(3) button[aria-expanded="true"] span:nth-of-type(3) {
+	transform:rotate(-45deg) scalex(1.25);
+  } 
+   */
+
+ /* ****************#EINDEHEADER***************** */
+
+
+
+
+/* ***************#FOOTER***************** */
+
+
+footer {
+	background-color: white;
+	text-align: center;
+	margin: 2em;
+}
+
+footer section {
+	margin-bottom: 3em;
+}
+
+footer h3 {
+	text-transform: uppercase;
+	color: var(--huiskleur);
+	font-size: .8em;
+	font-weight: 400;
+}
+
+footer p {
+	font-size: .8em;
+	font-weight: 300;
+}
+
+footer section:nth-of-type(1) img {
+	width: 8em;
+	margin: 3em;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+
+}
+
+footer ul img {
+	width: 2em;
+	margin: .1em;
+}
+
+footer ul img:hover {
+	filter: invert(12%) sepia(88%) saturate(4552%) hue-rotate(330deg) brightness(95%) contrast(100%);
+}
+
+footer section:nth-of-type(5) a {
+	display:inline-flex;
+	height:3.6em;
+	width: 10em;
+	padding: 1em 1em 1em 2.5em;
+	font-size: .8em;
+	margin-top: 0em;
+
+	background:var(--color-background);
+	align-items:center;
+
+	background-image: 
+	radial-gradient(
+		circle at left center,
+		white 0 1.6em, 
+		var(--zoeken) 1em 100%
+		);
+
+	text-decoration: none;
+	color: var(--color-background);
+}
+
+footer section:nth-of-type(6) {
+	margin-bottom: 0em;
+}
+
+footer section:nth-of-type(6) img {
+	width: 3em;
+}
+
+
+
+
