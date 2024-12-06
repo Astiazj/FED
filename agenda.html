@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="nl">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Joshua Astiazarain Olivera">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Agenda</title>
+	
+	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/agenda.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="images/klko_logo.png"> <!--in figma vierkantje maken van logo-->
+</head>
+
+<body>
+    <header>
+		<section>
+			<h1 class="visually_hidden">De kleine komedie</h1>
+			<img src="images/kk_logo_nav.svg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
+		</section>
+
+		<nav>
+			<!-- Hier nog een h2? -->
+			<ul>
+				<li>
+					<a href="#">
+						<span class="visually_hidden">winkelwagentje</span>
+						<img src="images/winkelwagen.svg" alt=""> <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="visually_hidden">Zoeken</span>
+						<img src="images/vergrootglas.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<nav>
+						<span class="visually_hidden">Menu</span>
+						<!-- bron: https://codepen.io/shooft/pen/JjQLVeB?editors=1000 -->
+						<button aria-label="menu" aria-expanded="false">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+							
+						<!-- <ul>
+								<li>
+									<a href="agenda.html">Programma & kaarten</a>
+								</li>
+								<li>
+									<a href="#">Informatie</a>
+								</li>
+								<li>
+									<a href="#">Steun ons</a>
+								</li>
+								<li>
+									<a href="#">Verhuur</a>
+								</li>
+								<li>
+									<a href="#">Nieuws</a>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+								</li>
+								<li>
+									<a href="#">Mijn theater</a>
+									<img src="images/favicon.svg" alt="icoon van een persoon">
+								</li>
+								<li>
+									<a href="agenda.html">Programma & kaarten</a>
+								</li>
+								<li>
+									<a href="#">Steun ons</a>
+								</li>
+							</ul> -->
+							
+					</nav>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<section>
+			<h2>Agenda</h2>
+			<a href="#">Klik hier voor seizoen</a>
+			</section>
+		
+
+		<section>
+			<h3 class="visually_hidden">Filter</h3>
+			<form>
+				<label for="datum">Filter op datum</label>
+				<input type="date" id="datum">
+			</form>
+			<a href="#">Minder filters
+				<img src="images/filter.svg" alt="filtericoon">
+			</a>
+		</section>
+
+		<section>
+			<h3 class="visually_hidden">Filteritems</h3>
+			<ul>
+				<li>Cabaret</li>
+				<li>Language no problem</li>
+				<li>Première</li>
+				<li>Stand-up</li>
+				<li>Actueel</li>
+				<li>Theaterconcert</li>
+				<li>Kleinkunst</li>
+			</ul>
+			<!-- <button>Meer +</button> -->
+		</section>
+	</section>
+
+	<section>
+		<h2 class="visually_hidden">Programma</h2>
+		<ul>
+			<li>
+				<h3>Kiki Schippers</h3>
+				<h4>met band - reprise</h4>
+				<img src="images/bloem.webp" alt="foto van Kiki Schippers">
+				<p><time datetime="2024-12-06 20:15">Vr 6 Dec 20.15 uur</time> - <time datetime="2024-12-06 22:00">22.00 uur</time></p>
+				<p>★★★★ 'Naast pure cabaretliedjes toont Schippers een grote muzikale veelzijdigheid.' [Volkskrant]</p>
+				<ul>
+					<li>Met liedjes</li>
+					<li>Met band</li>
+					<li>Kleinkunst</li>
+				</ul>
+				<p>€14,00-€27,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="icoon van een hart">
+				</button>
+				<div>
+				<a href="#">kaarten</a>
+				</div>
+			</li>
+			<li>
+				<h3>Kiki Schippers</h3>
+				<h4>met band - reprise</h4>
+				<img src="images/bloem.webp" alt="foto van Kiki Schippers">
+				<p><time datetime="2024-12-06 20:15">Vr 6 Dec 20.15 uur</time> - <time datetime="2024-12-06 22:00">22.00 uur</time></p>
+				<p>★★★★ 'Naast pure cabaretliedjes toont Schippers een grote muzikale veelzijdigheid.' [Volkskrant]</p>
+				<ul>
+					<li>Met liedjes</li>
+					<li>Met band</li>
+					<li>Kleinkunst</li>
+				</ul>
+				<p>€14,00-€27,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="icoon van een hart">
+				</button>
+				<div>
+					<a href="#">kaarten</a>
+				</div>
+			</li>
+			<li>
+				<h3>Kiki Schippers</h3>
+				<img src="images/bloem.webp" alt="foto van Kiki Schippers">
+				<h4>met band - reprise</h4>
+				<p><time datetime="2024-12-06 20:15">Vr 6 Dec 20.15 uur</time> - <time datetime="2024-12-06 22:00">22.00 uur</time></p>
+				<p>★★★★ 'Naast pure cabaretliedjes toont Schippers een grote muzikale veelzijdigheid.' [Volkskrant]</p>
+				<ul>
+					<li>Met liedjes</li>
+					<li>Met band</li>
+					<li>Kleinkunst</li>
+				</ul>
+				<p>€14,00-€27,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="icoon van een hart">
+				</button>
+				<div>
+					<a href="#">kaarten</a>
+				</div>
+			</li>
+			<li>
+				<h3>Kiki Schippers</h3>
+				<h4>met band - reprise</h4>
+				<img src="images/bloem.webp" alt="foto van Kiki Schippers">
+				<p><time datetime="2024-12-06 20:15">Vr 6 Dec 20.15 uur</time> - <time datetime="2024-12-06 22:00">22.00 uur</time></p>
+				<p>★★★★ 'Naast pure cabaretliedjes toont Schippers een grote muzikale veelzijdigheid.' [Volkskrant]</p>
+				<ul>
+					<li>Met liedjes</li>
+					<li>Met band</li>
+					<li>Kleinkunst</li>
+				</ul>
+				<p>€14,00-€27,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="icoon van een hart">
+				</button>
+				<div>
+					<a href="#">kaarten</a>
+				</div>
+			</li>
+			<li>
+				<h3>Kiki Schippers</h3>
+				<h4>met band - reprise</h4>
+				<img src="images/bloem.webp" alt="foto van Kiki Schippers">
+				<p><time datetime="2024-12-06 20:15">Vr 6 Dec 20.15 uur</time> - <time datetime="2024-12-06 22:00">22.00 uur</time></p>
+				<p>★★★★ 'Naast pure cabaretliedjes toont Schippers een grote muzikale veelzijdigheid.' [Volkskrant]</p>
+				<ul>
+					<li>Met liedjes</li>
+					<li>Met band</li>
+					<li>Kleinkunst</li>
+				</ul>
+				<p>€14,00-€27,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="icoon van een hart">
+				</button>
+				<div>
+					<a href="#">kaarten</a>
+				</div>
+			</li>
+			<li>
+				<h3>Kiki Schippers</h3>
+				<h4>met band - reprise</h4>
+				<img src="images/bloem.webp" alt="foto van Kiki Schippers">
+				<p><time datetime="2024-12-06 20:15">Vr 6 Dec 20.15 uur</time> - <time datetime="2024-12-06 22:00">22.00 uur</time></p>
+				<p>★★★★ 'Naast pure cabaretliedjes toont Schippers een grote muzikale veelzijdigheid.' [Volkskrant]</p>
+				<ul>
+					<li>Met liedjes</li>
+					<li>Met band</li>
+					<li>Kleinkunst</li>
+				</ul>
+				<p>€14,00-€27,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="icoon van een hart">
+				</button>
+				<div>
+					<a href="#">kaarten</a>
+				</div>
+			</li>
+			<li>
+				<h3>Kiki Schippers</h3>
+				<h4>met band - reprise</h4>
+				<img src="images/bloem.webp" alt="foto van Kiki Schippers">
+				<p><time datetime="2024-12-06 20:15">Vr 6 Dec 20.15 uur</time> - <time datetime="2024-12-06 22:00">22.00 uur</time></p>
+				<p>★★★★ 'Naast pure cabaretliedjes toont Schippers een grote muzikale veelzijdigheid.' [Volkskrant]</p>
+				<ul>
+					<li>Met liedjes</li>
+					<li>Met band</li>
+					<li>Kleinkunst</li>
+				</ul>
+				<p>€14,00-€27,50</p>
+				<button aria-label="Favoriet"><img src="images/hart.svg" alt="icoon van een hart">
+				</button>
+				<div>
+					<a href="#">kaarten</a>
+				</div>
+			</li>
+			<li>
+				<h3>Kiki Schippers</h3>
+				<h4>met band - reprise</h4>
+				<img src="images/bloem.webp" alt="foto van Kiki Schippers">
+				<p><time datetime="2024-12-06 20:15">Vr 6 Dec 20.15 uur</time> - <time datetime="2024-12-06 22:00">22.00 uur</time></p>
+				<p>★★★★ 'Naast pure cabaretliedjes toont Schippers een grote muzikale veelzijdigheid.' [Volkskrant]</p>
+				<ul>
+					<li>Met liedjes</li>
+					<li>Met band</li>
+					<li>Kleinkunst</li>
+				</ul>
+				<p>€14,00-€27,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="icoon van een hart">
+				</button>
+				<div>
+					<a href="#">kaarten</a>
+				</div>
+			</li>
+		</ul>
+		<!-- <p>1 ⬇ van 14</p>
+		<a href="#">volgende</a> -->
+	</section>
+	</main>
+
+    <footer>
+		<section>
+			<h2 class="visually_hidden">De kleine komedie</h2>
+			<img src="images/dkk_logo.jpg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
+		</section>
+
+		<section>
+			<h3>Adres</h3>
+			<p>Amstel 56-58</p>
+			<p>1017 AC Amsterdam</p>
+		</section>
+
+		<section>
+			<h3>Kassa</h3>
+			<p>020 624 05 34</p> <!--speciaal label voor een telefoonnummer?-->
+			<p>De kassa is bereikbaar op voorstellingsdagen vanaf 16 uur (bij matinees vanaf 13 uur).</p>
+			<p>Op zondagen zonder voorstelling is de kassa gesloten.</p>
+			<p>Heb je vragen? Stuur dan een mailtje naar kassa@dekleinekomedie.nl</p>
+		</section>
+
+		<section>
+			<h3>Volg ons op</h3>
+			<ul>
+				<li><a href="#">
+					<p class="visually_hidden">Facebook</p>
+					<img src="images/facebook.svg" alt="logo van Facebook">
+				</a></li>
+				<li><a href="#">
+					<p class="visually_hidden">Twitter</p>
+					<img src="images/twitter.svg" alt="logo van Twitter">
+				</a></li>
+				<li><a href="#">
+					<p class="visually_hidden">Instagram</p>
+					<img src="images/insta.svg" alt="logo van Instagram">
+				</a></li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Meld je aan voor de nieuwsbrief</h3>
+			<a href="#">inschrijven</a>
+		</section>
+
+		<section>
+			<p class="visually_hidden">Fonds Podium Kunsten</p>
+			<img src="images/fpk.webp" alt="logo van Fonds Podium Kunsten">
+		</section>
+
+	</footer>
+
+
+
+
+
+
+</body>

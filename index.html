@@ -3,12 +3,13 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Joshua Astiazarain Olivera">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>De Kleine Komedie</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/index.css" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="images/klko_logo.png"> <!--in figma vierkantje maken van logo-->
 </head>
 
@@ -20,6 +21,7 @@
 		</section>
 
 		<nav>
+			<!-- Hier nog een h2? -->
 			<ul>
 				<li>
 					<a href="#">
@@ -34,7 +36,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<nav>
 						<span class="visually_hidden">Menu</span>
 						<!-- bron: https://codepen.io/shooft/pen/JjQLVeB?editors=1000 -->
 						<button aria-label="menu" aria-expanded="false">
@@ -42,7 +44,39 @@
 							<span></span>
 							<span></span>
 						</button>
-					</a>
+							
+						<!-- <ul>
+								<li>
+									<a href="agenda.html">Programma & kaarten</a>
+								</li>
+								<li>
+									<a href="#">Informatie</a>
+								</li>
+								<li>
+									<a href="#">Steun ons</a>
+								</li>
+								<li>
+									<a href="#">Verhuur</a>
+								</li>
+								<li>
+									<a href="#">Nieuws</a>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+								</li>
+								<li>
+									<a href="#">Mijn theater</a>
+									<img src="images/favicon.svg" alt="icoon van een persoon">
+								</li>
+								<li>
+									<a href="agenda.html">Programma & kaarten</a>
+								</li>
+								<li>
+									<a href="#">Steun ons</a>
+								</li>
+							</ul> -->
+							
+					</nav>
 				</li>
 			</ul>
 		</nav>
@@ -56,51 +90,63 @@
 	<main>
 		<!-- mag ik hier wel een div voor gebruiken? -->
 		<section>
+			<section>
 				<h2>Vier kerst met Rayan Panday & friends</h2>
 				<p><time datetime="2024-12-20">vr 20 </time> t/m <time datetime="2024-12-24">di 24 december</time></p>
 				<a href="#">koop hier je kaarten</a>
+			</section>
 			<img src="images/header_img.jpg" alt="foto van Rayan Panday zittend bij een haardvuur">
 		</section>
 
 		<section>
 		<ul>
 			<li>
+				<section>
 				<h2>Boekenborrel</h2>
 				<h3>Joris Bijdendijk</h3>
 				<p><time datetime="2024-12-14 15:00">za 14 dec 15.00 uur </time>-<time datetime="2024-12-14 16:00"> 16.00 uur</time></p>
 				<a href="#">Kaarten</a>
+				</section>
 				<img src="images/boekenborrel.jpg" alt="foto van Joris Bijdendijk">
 			</li>
 
 			<li>
+				<section>
 				<h2>Kirsten van Teijn</h2>
 				<h3>Jaloezie is een bitch - reprise</h3>
 				<p><time datetime="2024-11-19 20:15">di 19 nov 20.15 uur</time> - <time datetime="2024-11-19 22:00">22.00 uur</time></p>
 				<a href="#">laatste kaarten</a>
+				</section>
 				<img src="images/remko_vrijdag.jpg" alt="foto van Kirsten van Teijn">
 			</li>
 
 			<li>
+				<section>
 				<h2>Volmondig</h2>
 				<h3>Woordkunst & diner in KomedieLAB in Bar Chimi, Amstel 80</h3>
 				<p><time datetime="2024-11-20 19:30">wo 20 nov 19.30 uur</time> - <time datetime="2024-11-20 21:00">21.00</time></p>
 				<a href="#">kaarten</a>
+				</section>
 				<img src="images/flip_noorman.jpg" alt="foto van man met een microfoon, op de achtergrond twee mannen met een elektrische gitaar vast">
 			</li>
 
 			<li>
+				<section>
 				<h2>Patrick Nederkoorn</h2>
 				<h3>Uit de klauwen - première</h3>
 				<p><time datetime="2024-11-20">wo 20 nov</time> en <time datetime="2024-11-21">do 21 nov</time></p>
 				<a href="#">kaarten</a>
+				</section>
 				<img src="images/pieter_derks.jpg" alt="foto van Patrick Nederkoorn">
 			</li>
 
 			<li>
+				<section>
 				<h2>Anne Neuteboom</h2>
 				<h3>En dan nu Anne Neuteboom - première</h3>
 				<p><time datetime="2024-11-22">vr 22 nov</time> - <time datetime="2024-11-23">zat 23 nov</time></p>
 				<a href="#">kaarten</a>
+				</section>
 				<img src="images/zo_opgelost.jpg" alt="foto van Kirsten van Teijn">
 			</li>
 		</ul>
@@ -186,7 +232,7 @@
 
 		</section>
 
-		<section>
+		<!-- <section>
 			<h2 class="visually_hidden">Promotie</h2> 
 			<section>
 				<h2>Steun Ons</h2>
@@ -204,37 +250,45 @@
 			<h2>nieuwsbrief</h2>
 			<p>Meld je aan voor de nieuwsbrief en blijf op de hoogte van nieuws en bijgeboekte voorstellingen.</p>
 			<a href="#">inschrijven</a>
-		</section>
+		</section> -->
 
 	</main>
 
 	<footer>
 		<section>
-			<h2>De kleine komedie</h2>
-			<img src="images/XX.png" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
+			<h2 class="visually_hidden">De kleine komedie</h2>
+			<img src="images/dkk_logo.jpg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
 		</section>
 
 		<section>
 			<h3>Adres</h3>
-			<p>Amstel 56-58 1017 AC Amsterdam</p>
+			<p>Amstel 56-58</p>
+			<p>1017 AC Amsterdam</p>
 		</section>
 
 		<section>
 			<h3>Kassa</h3>
 			<p>020 624 05 34</p> <!--speciaal label voor een telefoonnummer?-->
-		</section>
-		
-		<section>
 			<p>De kassa is bereikbaar op voorstellingsdagen vanaf 16 uur (bij matinees vanaf 13 uur).</p>
 			<p>Op zondagen zonder voorstelling is de kassa gesloten.</p>
 			<p>Heb je vragen? Stuur dan een mailtje naar kassa@dekleinekomedie.nl</p>
 		</section>
 
 		<section>
+			<h3>Volg ons op</h3>
 			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Instagram</a></li>
+				<li><a href="#">
+					<p class="visually_hidden">Facebook</p>
+					<img src="images/facebook.svg" alt="logo van Facebook">
+				</a></li>
+				<li><a href="#">
+					<p class="visually_hidden">Twitter</p>
+					<img src="images/twitter.svg" alt="logo van Twitter">
+				</a></li>
+				<li><a href="#">
+					<p class="visually_hidden">Instagram</p>
+					<img src="images/insta.svg" alt="logo van Instagram">
+				</a></li>
 			</ul>
 		</section>
 
@@ -244,7 +298,8 @@
 		</section>
 
 		<section>
-			<p>Fonds Podium Kunsten</p>
+			<p class="visually_hidden">Fonds Podium Kunsten</p>
+			<img src="images/fpk.webp" alt="logo van Fonds Podium Kunsten">
 		</section>
 
 	</footer>
