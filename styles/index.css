@@ -4,7 +4,7 @@
 /******************* #BANNER ********************/
 
 /* Vragen hoe dit moet met ruimte rechts en links en hoe je alles behalve de image kan selecteren */
-main section:nth-of-type(1) {
+main > section:nth-of-type(1) {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 40vh 50vh;
@@ -184,7 +184,6 @@ main ul:nth-of-type(1) p {
 }
 
 main ul:nth-of-type(1) a {
-
 	display:inline-flex;
 	height:3em;
 	padding: 1em 1em 1em 2.5em;
@@ -351,7 +350,7 @@ main ul:nth-of-type(2) a {
 	font-weight: 500;
 }
 
-	@media (min-width: 48em) {
+	@media (width > 48em) {
 		main ul:nth-of-type(2) li {
 		  flex-basis: 45%;
 		  margin: 1em;
@@ -364,7 +363,7 @@ main ul:nth-of-type(2) a {
 
 	}
 
-	@media (min-width: 62em) {
+	@media (width > 62em) {
 		main ul:nth-of-type(2) li {
 			flex-basis: 32%;
 			margin: 1em;
@@ -377,7 +376,7 @@ main ul:nth-of-type(2) a {
 
 	}
 
-	@media (min-width: 85em) {
+	@media (width > 85em) {
 		main ul:nth-of-type(2) li {
 			flex-basis: 25%;
 			margin: 1em;
@@ -421,22 +420,23 @@ main button:nth-of-type(2){
 main section:nth-of-type(3) {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 4fr 1fr 1fr;
+	/* grid-template-rows: 4fr 1fr 1fr; */
 	margin: 5vw;
 	z-index: 10;
 	/* background-color: aliceblue;
 	padding: 3em; */
 }
 
-main section:nth-of-type(3) > section:nth-of-type(1) {
-	grid-row: 1/2;
+main section:nth-of-type(3) section {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 50vh 20vh;
+	margin: 2em 0em 0em 0em;
+	align-items: center;
 }
 
-main section:nth-of-type(3) > section:nth-of-type(2) {
-	grid-row: 2/-1;
-}
 
-main section:nth-of-type(3) section h2 {
+main section:nth-of-type(3) section h3 {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -444,8 +444,9 @@ main section:nth-of-type(3) section h2 {
 	padding: 0;
 	z-index: 1;
 	text-transform: uppercase;
-	grid-row: 2/3;
+	grid-row: 1/2;
 	grid-column: 1/2;
+	align-self: end;
 	color: var(--color-background);
 	font-size: 2em;
 	text-align: center;
@@ -454,12 +455,12 @@ main section:nth-of-type(3) section h2 {
 main section:nth-of-type(3) section p {
 	display: flex;
 	justify-content: center;
-	align-items:flex-start;
+	align-self:flex-start;
 	margin: 0;
 	padding: 0;
 	font-weight: 700;
 	z-index: 1;
-	grid-row: 3/4;
+	grid-row: 2/3;
 	grid-column: 1/2;
 	color: var(--color-background);
 }
@@ -469,49 +470,31 @@ main section:nth-of-type(3) section img {
 	grid-column: 1/-1;
 	grid-row: 1/-1;
 	z-index: 0;
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	align-self: stretch;
 	object-fit: cover;
+	padding: 0;
 }
 
 
 /* Vragen */
-@media (width > 48em) { 
-	/* main section:nth-of-type(3) {
-		display: grid;
-		grid-template-columns: 45vw 45vw;
-		margin: 2em 1em;
-		align-items: center;
-		justify-content: center;
-	}
+@media (width > 48em) {
 
-	 main section:nth-of-type(3) section {
-		margin: 2em;
-	} 
-
-	 main section:nth-of-type(3) section img {
-		height: auto;
-		align-self: stretch;
-		object-fit: cover;
-	}  */
-
-	/* main section:nth-of-type(3) section p {
-		justify-items: center;
-	} */
-
-	main section:nth-of-type(3) > section {
+	main section:nth-of-type(3) {
 		grid-template-columns: 1fr 1fr;
 	}
 
+	main section:nth-of-type(3) > section > h3 {
+		font-size: 2.5em;
+	}
+
 	main section:nth-of-type(3) > section:nth-of-type(1) {
-		grid-column: 1/2;
-		grid-row: 1/-1;
+		margin-right: .5em;
 	}
 
 	main section:nth-of-type(3) > section:nth-of-type(2) {
-		grid-column: 2/-1;
-		grid-row: 1/-1;
+		margin-left: .5em;
 	}
 
 
@@ -564,8 +547,11 @@ main section:nth-of-type(4) a {
 
 @media (width > 48em) {
 
+
 	main section:nth-of-type(4) {
 		margin: 2em 2.5em;
+		background-image: url("images/nieuwsbrief.png");
+		background-color: none;
 	}
 
 	main section:nth-of-type(4) h2 {

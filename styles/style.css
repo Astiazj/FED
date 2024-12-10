@@ -23,8 +23,6 @@
 	--achtergrondbruin:#f8f4ec;
 }
 
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -36,6 +34,12 @@ body {
 	background-color: var(--achtergrond);
 	font-family: 'DINB';
 }
+
+:focus-visible {
+	border: .3em solid var(--color-text	);
+	outline: 0;
+}
+
 
 
 /****************** #HEADER ******************/
@@ -108,7 +112,7 @@ header section:nth-of-type(1){
 	display: flex;
 }
 
-header section:nth-of-type(1) img{
+header > section:nth-of-type(1) > img {
 	flex-direction: column;
 	width:8em;
 	margin:0em;
@@ -123,14 +127,6 @@ header ul:nth-of-type(1) {
 	margin: 0;
 	padding: 0;
 }
-
-header ul:nth-of-type(1) img {
-	width: 2em;
-	margin:0;
-	/* bron: https://codepen.io/sosuke/full/Pjoqqp */
-	filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(185deg) brightness(99%) contrast(102%);
-}
-	
 
 header ul:nth-of-type(1) li {
 	height: 3.5em;
@@ -153,13 +149,213 @@ nav > ul:nth-of-type(1) > li:nth-of-type(3) {
 	background-color: var(--hamburgermenu);
 }
 
+
+/******************* #WINKELWAGEN ****************/
+nav > ul:nth-of-type(1) > li:nth-of-type(1) button {
+	background-color: transparent;
+	border: none;
+	position: relative;
+}
+
+header ul:nth-of-type(1) > li > section > button > img {
+	width: 2em;
+	margin:0;
+	/* bron: https://codepen.io/sosuke/full/Pjoqqp */
+	filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(70deg) brightness(90%) contrast(108%);
+	background-color: transparent;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(1) > section > section {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	width: 100vw;
+	max-width: 20em;
+	translate: 100% 0%;
+	transition: .5s;
+	z-index: 10;
+	background-color: var(--achtergrond);
+}
+
+
+
+nav > ul:nth-of-type(1) > li:nth-of-type(1) > section.toonWinkel > section {
+	translate: 0% 0%;
+}
+
+
+
+/******************* #WINKELWAGENEND ****************/
+
+
+
+/******************* #ZOEKEN ****************/
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) button {
+	background-color: transparent;
+	border: none;
+	position: relative;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 0;
+	height: 4em;
+	translate: 0% -100%;
+	transition: .5s;
+	z-index: 10;
+	background-color: var(--achtergrond);
+	display: flex;
+	justify-content: center;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > button {
+	cursor: pointer;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section {
+	display: flex;
+	align-items: center;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > form {
+	display: flex;
+	align-self: center;
+	height: 2em;
+	margin-right: 1em;
+} 
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > form > input[type=text] {
+	font-family: 'DINB';
+	font-weight: 300;
+	border: none;
+	border-bottom: .1em solid lightgray;
+	padding-right: 2em;
+	position: relative;
+	width: 40vw;
+	max-width: 30em;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > form > input[type=text]:focus-visible {
+	border: .2em solid var(--huiskleur);
+	border-radius: 10px;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > a {
+	display: flex;
+	align-self: center;
+	margin-right: 1em;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > a > img {
+	background: transparent;
+	filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(149deg) brightness(93%) contrast(100%);
+	width: 2em;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > a > img:hover {
+	filter: invert(17%) sepia(100%) saturate(6728%) hue-rotate(333deg) brightness(78%) contrast(96%);
+
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > button > img {
+	background-color: transparent;
+	filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(149deg) brightness(93%) contrast(100%);
+	width: 1.5em;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > button > img:hover {
+	cursor: pointer;
+	filter: invert(17%) sepia(100%) saturate(6728%) hue-rotate(333deg) brightness(78%) contrast(96%);
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav.toonZoek > section {
+	translate: 0% 0%;
+}
+
+/******************* #ZOEKENEND ****************/
+
+
 /******************* #HAMBURGERMENU ****************/
 
-/* nav > ul > li > nav > ul > li{
-	background-color: white;
-}  */
+nav > ul > li > nav > button {
+	position: relative;
+	z-index: 1;
+	background-color: transparent;
+	border: none;
+}
+
+nav > ul > li > nav > button img {
+	filter: invert(1);
+}
+
+nav > ul > li > nav > div {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom:0;
+	translate: 0% -100%;
+	background-color: var(--achtergrond);
+	transition: .5s;
+	z-index: -10;
+
+	display: flex;
+	justify-content: left;
+	padding-left: 4em;
+}
+
+nav > ul > li > nav > div > ul {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(9, 1fr);
+	padding-left: 4em;
+}
+
+nav > ul > li > nav > div > ul > li {
+	text-align: left;
+	text-transform: lowercase;
+	margin:0;
+}
+
+nav > ul > li > nav > div > ul > li > a {
+	font-size: 1.2em;
+	color: var(--huiskleur);
+	font-weight: 700;
+	text-decoration: none;
+	text-align: left;
+}
+
+nav > ul > li > nav > div > ul > li:nth-of-type(7) {
+	margin-top: 2em;
+}
+
+nav > ul > li > nav > div > ul > li:nth-of-type(7) a{
+	order: 2;
+}
+
+nav > ul > li > nav > div > ul > li:nth-of-type(7) img {
+	filter: invert(28%) sepia(66%) saturate(6124%) hue-rotate(352deg) brightness(90%) contrast(99%);
+	margin-right: 1em;
+}
 
 
+nav.toonMenu > div {
+	translate: 0% 0%;
+}
+
+nav.toonMenu nav > button > img {
+	content:url("https://www.svgrepo.com/svg/522086/cross");
+	z-index: 10;
+}
+
+/* Kruis: */
+/* https://www.svgrepo.com/svg/522086/cross */
 
 /* *********************#HAMBURGERMENU END ************************/
 
