@@ -10,11 +10,13 @@
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link href="styles/index.css" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="images/klko_logo.png"> <!--in figma vierkantje maken van logo-->
+	<link rel="icon" type="image/x-icon" href="images/klko_logo.png">
 </head>
 
 <body>
 	<header>
+		<!-- bron: https://www.w3schools.com/accessibility/accessibility_skip_links.php -->
+		<a href="#main" class="skip">ga meteen naar de content</a>
 		<section>
 			<h1 class="visually_hidden">De kleine komedie</h1>
 			<a href="index.html">
@@ -22,30 +24,33 @@
 			</a>
 		</section>
 
-		<nav>
-			<!-- Hier nog een h2? -->
+		<nav>	
 			<ul>
 				<li>
 					<section>
+						<h2 class="visually_hidden">Navigatie</h2>
 						<button aria-label="winkelwagen">
 							<span class="visually_hidden">winkelwagentje</span>
-							<img src="images/winkelwagen.svg" alt="icoon van een winkelwagen"> <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
+							<img src="images/winkelwagen.svg" alt=""> <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
 						</button>
 						<section>
+							<h3 class="visually_hidden">winkelmandje</h3>
 							<div>
-								<h2>winkelmandje</h2>
-								<img src="images/winkelwagen.svg" alt="icoon van een winkelwagen">
+								<h4>winkelmandje</h4>
+								<img src="images/winkelwagen.svg" alt="">
 							</div>
 							<div>
 								<p>Je winkelmandje is leeg</p>
-								<img src="images/leeg.svg" alt="icoon van een verdrietige smiley">
+								<!-- bron: https://www.svgrepo.com/svg/529849/sad-circle -->
+								<img src="images/leeg.svg" alt=""> 
 							</div>
 							<div>
 								<a href="#">Verder winkelen</a>
 								<a href="#">Stoelen kiezen</a>
 							</div>
 							<button aria-label="sluiten">
-								<img src="images/kruis.svg" alt="icoon van een kruis">
+								<!-- bron: https://www.svgrepo.com/svg/522086/cross -->
+								<img src="images/kruis.svg" alt="">
 							</button>
 						</section>
 					</section>
@@ -55,20 +60,22 @@
 					<nav>
 						<button aria-label="zoeken">
 							<span class="visually_hidden">Zoeken</span>
-							<img src="images/vergrootglas.svg" alt="icoon van een vergrootglas">
+							<!-- bron: https://www.svgrepo.com/svg/479496/magnifying-glass-11 -->
+							<img src="images/vergrootglas.svg" alt="">
 						</button>
 						<section>
+							<h2 class="visually_hidden">zoeken</h2>
 							<form>
-								<label class="visually_hidden" for="tekst">Zoeken</label>
-								<input type="text" id="datum" placeholder="Zoek op naam, voorstelling...">
+								<label class="visually_hidden" for="zoeken">Zoeken</label>
+								<input type="text" id="zoeken" placeholder="Zoek op naam, voorstelling...">
 							</form>
 							<a href="#">
 								<span class="visually_hidden">zoeken</span>
-								<img src="images/vergrootglas.svg" alt="icoon van een vergrootglas">
+								<img src="images/vergrootglas.svg" alt="">
 							</a>
 							<button aria-label="sluiten">
 								<span class="visually_hidden">Sluiten</span>
-								<img src="images/kruis.svg" alt="icoon van een kruis">
+								<img src="images/kruis.svg" alt="">
 							</button>
 						</section>
 					</nav>
@@ -80,7 +87,7 @@
 						<!-- bron: https://codepen.io/shooft/pen/JjQLVeB?editors=1000 -->
 						<button aria-label="menu" aria-expanded="false">
 							<!-- bron: https://www.svgrepo.com/svg/532195/menu -->
-							<img src="images/hamburger.svg" alt="icoon van een hamburgermenu">
+							<img src="images/hamburger.svg" alt="">
 						</button>
 						<div>
 						<ul>
@@ -105,7 +112,7 @@
 								<li>
 									<a href="#">Mijn theater</a>
 									<!-- bron: https://www.svgrepo.com/svg/454078/account -->
-									<img src="images/account.svg" alt="icoon van een persoon">
+									<img src="images/account.svg" alt="">
 								</li>
 								<li>
 									<a href="agenda.html">Programma & kaarten</a>
@@ -126,23 +133,24 @@
 	- 
 	-->
 
-	<main>
-		<!-- mag ik hier wel een div voor gebruiken? -->
+	<main id="main">
 		<section>
+			<h2 class="visually_hidden">Banner</h2>
 			<section>
-				<h2>Vier kerst met Rayan Panday & friends</h2>
+				<h3>Vier kerst met Rayan Panday & friends</h3>
 				<p><time datetime="2024-12-20">vr 20 </time> t/m <time datetime="2024-12-24">di 24 december</time></p>
 				<a href="#">koop hier je kaarten</a>
 			</section>
-			<img src="images/header_img.jpg" alt="foto van Rayan Panday zittend bij een haardvuur">
+			<img src="images/rayan_groot.webp" alt="foto van Rayan Panday zittend bij een haardvuur">
 		</section>
 
 		<section>
+			<h2 class="visually_hidden">Voorstellingen</h2>
 		<ul>
 			<li>
 				<section>
-				<h2>Boekenborrel</h2>
-				<h3>Joris Bijdendijk</h3>
+				<h3>Boekenborrel</h3>
+				<h4>Joris Bijdendijk</h4>
 				<p><time datetime="2024-12-14 15:00">za 14 dec 15.00 uur </time>-<time datetime="2024-12-14 16:00"> 16.00 uur</time></p>
 				<a href="#">Kaarten</a>
 				</section>
@@ -151,47 +159,48 @@
 
 			<li>
 				<section>
-				<h2>Kirsten van Teijn</h2>
-				<h3>Jaloezie is een bitch - reprise</h3>
-				<p><time datetime="2024-11-19 20:15">di 19 nov 20.15 uur</time> - <time datetime="2024-11-19 22:00">22.00 uur</time></p>
+				<h3>Alex Ploeg</h3>
+				<h4>Unplugged - première</h4>
+				<p><time datetime="2024-12-11">wo 11 dec</time> - <time datetime="2025-05-23">vr 23 mei</time></p>
+				<a href="#">kaarten</a>
+				</section>
+				<img src="images/alexploeg.webp" alt="foto van Alex Ploeg">
+			</li>
+
+			<li>
+				<section>
+				<h3>Saman Amini</h3>
+				<h4>Saman Amini's Onaantastbaar - in KomedieLAB</h4>
+				<p><time datetime="2024-12-11 20:15">wo 11 dec 20.15 uur</time> - <time datetime="2024-12-11 22:00">22.00</time></p>
 				<a href="#">laatste kaarten</a>
 				</section>
-				<img src="images/remko_vrijdag.jpg" alt="foto van Kirsten van Teijn">
+				<img src="images/samanamani.webp" alt="foto van Saman Amini">
 			</li>
 
 			<li>
 				<section>
-				<h2>Volmondig</h2>
-				<h3>Woordkunst & diner in KomedieLAB in Bar Chimi, Amstel 80</h3>
-				<p><time datetime="2024-11-20 19:30">wo 20 nov 19.30 uur</time> - <time datetime="2024-11-20 21:00">21.00</time></p>
+				<h3>Nina's Femilicious Posse</h3>
+				<h4>Een posse vol feministische fanaten - in KomedieLAB</h4>
+				<p><time datetime="2024-12-13">vr 13 dec</time> - <time datetime="2025-04-24">do 24 apr</time></p>
 				<a href="#">kaarten</a>
 				</section>
-				<img src="images/flip_noorman.jpg" alt="foto van man met een microfoon, op de achtergrond twee mannen met een elektrische gitaar vast">
+				<img src="images/nina.webp" alt="foto van Femi van Elshuis">
 			</li>
 
 			<li>
 				<section>
-				<h2>Patrick Nederkoorn</h2>
-				<h3>Uit de klauwen - première</h3>
-				<p><time datetime="2024-11-20">wo 20 nov</time> en <time datetime="2024-11-21">do 21 nov</time></p>
-				<a href="#">kaarten</a>
+				<h3>Wishful Singing & Nicolien Mizee</h3>
+				<h4>De ideale kerst</h4>
+				<p><time datetime="2024-12-15 20:15">zo 15 dec 20.15</time> - <time datetime="2024-12-15">22.00 uur</time></p>
+				<a href="#">laatste kaarten</a>
 				</section>
-				<img src="images/pieter_derks.jpg" alt="foto van Patrick Nederkoorn">
-			</li>
-
-			<li>
-				<section>
-				<h2>Anne Neuteboom</h2>
-				<h3>En dan nu Anne Neuteboom - première</h3>
-				<p><time datetime="2024-11-22">vr 22 nov</time> - <time datetime="2024-11-23">zat 23 nov</time></p>
-				<a href="#">kaarten</a>
-				</section>
-				<img src="images/zo_opgelost.jpg" alt="foto van Kirsten van Teijn">
+				<img src="images/nicolien.webp" alt="foto van Nicolien Mizee">
 			</li>
 		</ul>
 	
 
 		<!-- ARTIIKELEN -->
+		 <!-- bron carousel: https://codepen.io/shooft/pen/xbKwdJr -->
 		<section>
 		<h2 class="visually_hidden">Artikelen</h2>
 		<ul>
@@ -276,14 +285,14 @@
 				</article>
 			</li>
 		</ul>
+		<!-- bron: https://www.svgrepo.com/svg/521965/arrow-left-circle -->
 		<button aria-label="pijl naar links">
-			<img src="images/pijl.svg" alt="icoon van een pijl naar links">
+			<img src="images/pijl.svg" alt="">
 		</button>
 		<button aria-label="pijl naar rechts">
-			<img src="images/pijl.svg" alt="icoon van pijl naar rechts">
+			<img src="images/pijl.svg" alt="">
 		</button>
 		</section>
-		<!-- </section> -->
 
 		</section>
 
@@ -291,12 +300,12 @@
 			<h2 class="visually_hidden">Promotie</h2> 
 			<section>
 				<h3>Steun Ons</h3>
-				<p>en doneer ➔</p>
+				<a href="#">en doneer ➔</a>
 				<img src="images/kkrood.webp" alt="logo van de kleine komedie in het rood">
 			</section>
 			<section>
 				<h3>Word Vriend</h3>
-				<p>steun ons ➔</p>
+				<a href="#">steun ons ➔</a>
 				<img src="images/kkpaars2.webp" alt="logo van de kleine komedie in het paars">
 			</section>
 		</section>
@@ -323,10 +332,11 @@
 
 		<section>
 			<h3>Kassa</h3>
-			<p>020 624 05 34</p> <!--speciaal label voor een telefoonnummer?-->
+			<!-- bron: ChatGPT (prompt: hoe kan ik semantisch een telefoonnummer opschrijven in html) -->
+			<a href="tel:+206240534">020 624 05 34</a>
 			<p>De kassa is bereikbaar op voorstellingsdagen vanaf 16 uur (bij matinees vanaf 13 uur).</p>
 			<p>Op zondagen zonder voorstelling is de kassa gesloten.</p>
-			<p>Heb je vragen? Stuur dan een mailtje naar kassa@dekleinekomedie.nl</p>
+			<p>Heb je vragen? Stuur dan een mailtje naar <a href="mailto:kassa@dekleinekomedie">kassa@dekleinekomedie.nl</a></p>
 		</section>
 
 		<section>
@@ -353,7 +363,7 @@
 		</section>
 
 		<section>
-			<p class="visually_hidden">Fonds Podium Kunsten</p>
+			<h3 class="visually_hidden">Fonds Podium Kunsten</h3>
 			<img src="images/fpk.webp" alt="logo van Fonds Podium Kunsten">
 		</section>
 

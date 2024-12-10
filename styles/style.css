@@ -48,8 +48,6 @@ ul {
 
 /****************** #HEADER ******************/
 
-/* vragen */
-
 @font-face {
 	font-family: 'DINB';
 	font-weight: 300;
@@ -85,6 +83,21 @@ ul {
 	width: 1px;
 }
 
+.skip {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+  }
+
+.skip:focus {
+	position: static;
+  	width: auto;
+  	height: auto;
+}
+
 img {
 	max-width: 100%;
 }
@@ -103,13 +116,6 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
-
-/* @media (width > 37em) {
-header {
-	background-color: transparent;
-}
-
-} */
 
 header section:nth-of-type(1) > a {
 	margin-left:.2em;
@@ -199,10 +205,10 @@ nav > ul:nth-of-type(1) > li:nth-of-type(1) > section > section {
 
 nav > ul:nth-of-type(1) > li:nth-of-type(1) > section > section > button {
 	background-color: transparent;
+	/* Bron: https://codepen.io/sosuke/full/Pjoqqp */
 	filter: invert(74%) sepia(0%) saturate(26%) hue-rotate(195deg) brightness(85%) contrast(79%);
 	width: 2em;
 	border: none;
-
 	grid-column: -2/-1;
 	grid-row: 1/2;
 	display: flex;
@@ -229,7 +235,7 @@ nav > ul:nth-of-type(1) > li:nth-of-type(1) > section > section > div:nth-of-typ
 	margin: 1em;
 }
 
-nav > ul:nth-of-type(1) > li:nth-of-type(1) > section > section > div:nth-of-type(1) > h2 {
+nav > ul:nth-of-type(1) > li:nth-of-type(1) > section > section > div:nth-of-type(1) > h4 {
 	display: flex;
 	align-self: center;
 	text-transform: uppercase;
@@ -368,7 +374,6 @@ nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > a {
 
 nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > a > img {
 	background: transparent;
-	/* bron: https://codepen.io/sosuke/full/Pjoqqp */
 	filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(149deg) brightness(93%) contrast(100%);
 	width: 2em;
 }
@@ -448,6 +453,10 @@ nav > ul > li > nav > div > ul > li > a {
 	font-weight: 700;
 	text-decoration: none;
 	width: 100%;
+}
+
+nav > ul > li > nav > div > ul > li > a:hover {
+	color: var(--hamburgermenu);
 }
 
 nav > ul > li > nav > div > ul > li:nth-of-type(7) {
@@ -560,49 +569,7 @@ nav.toonMenu nav > button > img {
 
 /****************** #HAMBURGERKNOP BRON: ... ******************/
 
-	/* header li:nth-of-type(3) button {
-	display: flex;
-	flex-direction: column;
 
-	width:3em;
-	gap: .2em;
-	align-items: center;
-	background-color: transparent;
-	border: none;
-  }
-  
-  header li:nth-of-type(3) button span {
-	
-	width: 100%;
-	height:.3em;
-	background-color:#fff;
-	border-radius: 2em;
-	
-	transition-duration:.5s;
-  }
-  
-header li:nth-of-type(3) button span:nth-of-type(1) {
-	transform:translateY(-.4em);
-  }
-  
-
-  header li:nth-of-type(3) button span:nth-of-type(3) {
-	transform:translateY(.4em);
-  }  */
-
-/* HAMBURGERMENU SLUITEN */
-	/* header li:nth-of-type(3) button[aria-expanded="true"] span:nth-of-type(1) {
-	transform:rotate(45deg) scalex(1.25);
-  }
-  
-  header li:nth-of-type(3) button[aria-expanded="true"] span:nth-of-type(2) {
-	opacity:0;
-  }
-  
-  header li:nth-of-type(3) button[aria-expanded="true"] span:nth-of-type(3) {
-	transform:rotate(-45deg) scalex(1.25);
-  } 
-   */
 
  /* ****************#EINDEHEADER***************** */
 
@@ -654,6 +621,13 @@ footer ul img {
 
 footer ul img:hover {
 	filter: invert(12%) sepia(88%) saturate(4552%) hue-rotate(330deg) brightness(95%) contrast(100%);
+}
+
+footer section:nth-of-type(3) a {
+	color: var(--zoeken);
+	font-size: 1em;
+	font-weight: 300;
+	text-decoration: none;
 }
 
 footer section:nth-of-type(5) a {
@@ -732,6 +706,10 @@ footer section:nth-of-type(6) img {
 		grid-row: 1/2;
 		margin-right: 1em;
 		align-self: flex-end;
+	}
+
+	footer section:nth-of-type(5) h3 {
+		margin-right: 5vw;
 	}
 
 	footer section:nth-of-type(6) {
