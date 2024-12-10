@@ -413,6 +413,7 @@ nav > ul > li > nav > button {
 nav > ul > li > nav > button img {
 	filter: invert(1);
 	cursor: pointer;
+	width: 2em;
 }
 
 nav > ul > li > nav > div {
