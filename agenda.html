@@ -17,35 +17,73 @@
     <header>
 		<section>
 			<h1 class="visually_hidden">De kleine komedie</h1>
-			<img src="images/kk_logo_nav.svg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
+			<a href="index.html">
+				<img src="images/kk_logo_nav.svg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
+			</a>
 		</section>
 
 		<nav>
 			<!-- Hier nog een h2? -->
 			<ul>
 				<li>
-					<a href="#">
-						<span class="visually_hidden">winkelwagentje</span>
-						<img src="images/winkelwagen.svg" alt=""> <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
-					</a>
+					<section>
+						<button aria-label="winkelwagen">
+							<span class="visually_hidden">winkelwagentje</span>
+							<img src="images/winkelwagen.svg" alt="icoon van een winkelwagen"> <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
+						</button>
+						<section>
+							<div>
+								<h2>winkelmandje</h2>
+								<img src="images/winkelwagen.svg" alt="icoon van een winkelwagen">
+							</div>
+							<div>
+								<p>Je winkelmandje is leeg</p>
+								<img src="images/leeg.svg" alt="icoon van een verdrietige smiley">
+							</div>
+							<div>
+								<a href="#">Verder winkelen</a>
+								<a href="#">Stoelen kiezen</a>
+							</div>
+							<button aria-label="sluiten">
+								<img src="images/kruis.svg" alt="icoon van een kruis">
+							</button>
+						</section>
+					</section>
 				</li>
+
 				<li>
-					<a href="#">
-						<span class="visually_hidden">Zoeken</span>
-						<img src="images/vergrootglas.svg" alt="">
-					</a>
+					<nav>
+						<button aria-label="zoeken">
+							<span class="visually_hidden">Zoeken</span>
+							<img src="images/vergrootglas.svg" alt="icoon van een vergrootglas">
+						</button>
+						<section>
+							<form>
+								<label class="visually_hidden" for="tekst">Zoeken</label>
+								<input type="text" id="datum" placeholder="Zoek op naam, voorstelling...">
+							</form>
+							<a href="#">
+								<span class="visually_hidden">zoeken</span>
+								<img src="images/vergrootglas.svg" alt="icoon van een vergrootglas">
+							</a>
+							<button aria-label="sluiten">
+								<span class="visually_hidden">Sluiten</span>
+								<img src="images/kruis.svg" alt="icoon van een kruis">
+							</button>
+						</section>
+					</nav>
 				</li>
+
 				<li>
 					<nav>
 						<span class="visually_hidden">Menu</span>
 						<!-- bron: https://codepen.io/shooft/pen/JjQLVeB?editors=1000 -->
 						<button aria-label="menu" aria-expanded="false">
-							<span></span>
-							<span></span>
-							<span></span>
+							<!-- bron: https://www.svgrepo.com/svg/532195/menu -->
+							<img src="images/hamburger.svg" alt="icoon van een hamburgermenu">
 						</button>
-							
-						<!-- <ul>
+						<div>
+						<ul>
 								<li>
 									<a href="agenda.html">Programma & kaarten</a>
 								</li>
@@ -66,7 +104,8 @@
 								</li>
 								<li>
 									<a href="#">Mijn theater</a>
-									<img src="images/favicon.svg" alt="icoon van een persoon">
+									<!-- bron: https://www.svgrepo.com/svg/454078/account -->
+									<img src="images/account.svg" alt="icoon van een persoon">
 								</li>
 								<li>
 									<a href="agenda.html">Programma & kaarten</a>
@@ -74,8 +113,8 @@
 								<li>
 									<a href="#">Steun ons</a>
 								</li>
-							</ul> -->
-							
+							</ul>
+						</div>
 					</nav>
 				</li>
 			</ul>
@@ -330,7 +369,7 @@
 
 
 
-
+	<script defer src="scripts/script.js"></script>
 
 
 </body>

@@ -17,7 +17,9 @@
 	<header>
 		<section>
 			<h1 class="visually_hidden">De kleine komedie</h1>
-			<img src="images/kk_logo_nav.svg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
+			<a href="index.html">
+				<img src="images/kk_logo_nav.svg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
+			</a>
 		</section>
 
 		<nav>
@@ -25,7 +27,7 @@
 			<ul>
 				<li>
 					<section>
-						<button>
+						<button aria-label="winkelwagen">
 							<span class="visually_hidden">winkelwagentje</span>
 							<img src="images/winkelwagen.svg" alt="icoon van een winkelwagen"> <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
 						</button>
@@ -33,23 +35,25 @@
 							<div>
 								<h2>winkelmandje</h2>
 								<img src="images/winkelwagen.svg" alt="icoon van een winkelwagen">
-								<img src="images/kruis.svg" alt="icoon van een kruis">
 							</div>
 							<div>
 								<p>Je winkelmandje is leeg</p>
-								<img src="images/favicon.svg" alt="icoon van twee maskers">
+								<img src="images/leeg.svg" alt="icoon van een verdrietige smiley">
 							</div>
 							<div>
 								<a href="#">Verder winkelen</a>
 								<a href="#">Stoelen kiezen</a>
 							</div>
+							<button aria-label="sluiten">
+								<img src="images/kruis.svg" alt="icoon van een kruis">
+							</button>
 						</section>
 					</section>
 				</li>
 
 				<li>
 					<nav>
-						<button>
+						<button aria-label="zoeken">
 							<span class="visually_hidden">Zoeken</span>
 							<img src="images/vergrootglas.svg" alt="icoon van een vergrootglas">
 						</button>
@@ -62,7 +66,7 @@
 								<span class="visually_hidden">zoeken</span>
 								<img src="images/vergrootglas.svg" alt="icoon van een vergrootglas">
 							</a>
-							<button>
+							<button aria-label="sluiten">
 								<span class="visually_hidden">Sluiten</span>
 								<img src="images/kruis.svg" alt="icoon van een kruis">
 							</button>
@@ -78,7 +82,6 @@
 							<!-- bron: https://www.svgrepo.com/svg/532195/menu -->
 							<img src="images/hamburger.svg" alt="icoon van een hamburgermenu">
 						</button>
-							
 						<div>
 						<ul>
 								<li>
@@ -112,7 +115,6 @@
 								</li>
 							</ul>
 						</div>
-							
 					</nav>
 				</li>
 			</ul>
@@ -190,11 +192,14 @@
 	
 
 		<!-- ARTIIKELEN -->
-		<!-- <section> -->
+		<section>
+		<h2 class="visually_hidden">Artikelen</h2>
 		<ul>
 			<li> 
-				<article>	<!--articles in zetten-->
-					<h2>Vacature: Financieel Medewerker</h2>
+				<article>
+					<a href="#">
+						<h3>Vacature: Financieel Medewerker</h3>
+					</a>
 					<img src="images/financiele.webp" alt="bannerfoto vacature">
 					<p><time datetime="2024-11-14">do 14 nov</time></p>
 					<p>Vacature! We zijn op zoek naar een financieel medewerker voor in ieder geval 6 maanden. 
@@ -206,7 +211,9 @@
 
 			<li>
 				<article>
-					<h2>line-up volmondig 20 november bekend</h2>
+					<a href="#">
+						<h3>line-up volmondig 20 november bekend</h3>
+					</a>
 					<p><time datetime="2024-11-01">vr 1 nov</time></p>
 					<img src="images/volmondig.webp" alt="foto van man met een microfoon, op de achtergrond twee mannen met een elektrische gitaar vast">
 					<p>Aan tafel met Volmondig! Spoken word en spijs. Kunst en kost.
@@ -220,7 +227,9 @@
 			
 			<li>
 				<article>
-					<h2>Kaartverkoop IDFA van start</h2>
+					<a href="#">
+						<h3>Kaartverkoop IDFA van start</h3>
+					</a>
 					<p><time datetime="2024-10-30">wo 30 okt</time></p>
 					<img src="images/kkbuiten.webp" alt="foto van een theatergebouw">
 					<p>IDFA komt naar De Kleine Komedie! van <time datetime="2024-11-15">vrijdag 15</time> t/m <time datetime="2024-11-18">maandag 18 november</time> verovert de documentaire hier vier dagen lang het theater.
@@ -232,7 +241,9 @@
 
 			<li>
 				<article>
-					<h2>Winnaars Cabaretprijzen</h2>
+					<a href="#">
+						<h3>Winnaars Cabaretprijzen</h3>
+					</a>
 					<p><time datetime="2024-10-08">di 8 okt</time></p>
 					<img src="images/poeli.webp" alt="foto van de winnaars van de cabaretprijzen">
 					<p><time datetime="2024-10-07">Gisteravond</time> werden de Cabaretprijzen uitgereikt in Theater 
@@ -246,7 +257,9 @@
 
 			<li>
 				<article>
-					<h2>Zilveren raampje voor Merijn Scholten</h2>
+					<a href="#">
+						<h3>Zilveren raampje voor Merijn Scholten</h3>
+					</a>
 					<p><time datetime="2024-10-08">do 26 sep</time></p>
 					<img src="images/bloem.webp" alt="foto van Merijn Scholten op een podium">
 					<p><time datetime="2024-09-26">Vanavond</time> speelde Merijn Scholten zijn debuutvoorstelling Team 
@@ -263,8 +276,13 @@
 				</article>
 			</li>
 		</ul>
-		<button aria-label="pijl naar links"></button>
-		<button aria-label="pijl naar rechts"></button>
+		<button aria-label="pijl naar links">
+			<img src="images/pijl.svg" alt="icoon van een pijl naar links">
+		</button>
+		<button aria-label="pijl naar rechts">
+			<img src="images/pijl.svg" alt="icoon van pijl naar rechts">
+		</button>
+		</section>
 		<!-- </section> -->
 
 		</section>
