@@ -183,6 +183,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Dingen die zijn verbetererd:
+  - Genoeg ruimte gelaten tussen interactieve elementen
+  - List items toegevoegd
+  - Alt-teksten bij img's toegevoegd
+  - a elementen toegevoegd bij links
+  - Skip link toegevoegd om de header over te slaan
+  - Achtergrond aan de onleesbare teksten toegevoegd zodat het nu wel leesbaar is
+
+  Ruimte voor verbetering:
+  - ondersteuning dark mode
 
 </details>
 
@@ -202,20 +212,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Joshua      | Julian         | Mo    |
+  | ---            | ---                | ---          |
+  | support section  | hamburgermenu             |   |
+  | tot hoe groot responsive |  |  |
+  | hamburgermenu | |  |
+  | carousel            |              |        |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - div mogen wel voor pure opmaak
+  - max-content op row
+  - Buttons in alle states opmaken
 
 </details>
 
@@ -229,19 +239,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/header_eigen.png" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Wat er goed ging was het in elkaar zetten van de navigatiebalk, met bijbehorende elementen.
+  Dit was ook het onderdeel met Javascript waar ik tegenop zag, maar dit is me uiteindelijk goed afgegaan.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/nav_eigen.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het carousel-element heb ik veel tijd aan besteed, en werkt nog steeds niet volledig zoals ik zou willen. Je kan er nog steeds ook met je trackpad doorheen scrollen en hij scrollt door te veel artikelen tegelijkertijd. Toch werkt hij goed genoeg en heb ik ook hier met Javascript gewerkt.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/carousel_eigen.png" width="375px" alt="bummer">
 </details>
 
 
@@ -257,8 +268,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.w3schools.com/accessibility/accessibility_skip_links.php
+  2. https://www.dekleinekomedie.nl/
+  3. https://www.svgrepo.com/svg/525741/cart-large-minimalistic
+  4. https://www.svgrepo.com/svg/529849/sad-circle
+  5. https://www.svgrepo.com/svg/522086/cross
+  6. https://www.svgrepo.com/svg/479496/magnifying-glass-11
+  7. https://codepen.io/shooft/pen/JjQLVeB?editors=1000
+  8. https://codepen.io/shooft/pen/xbKwdJr
+  9. https://www.svgrepo.com/svg/521965/arrow-left-circle
+  10. https://codepen.io/shooft/pen/JjQLVeB?editors=1000
+  11. https://www.svgrepo.com/svg/532195/menu
+  12. https://www.svgrepo.com/svg/454078/account
+  13. ChatGPT (prompt: hoe kan ik semantisch een telefoonnummer opschrijven in html)
+  14. https://github.com/rachelandrew/cssgrid-ama/issues/19#issuecomment-272922212
+  15. https://www.w3schools.com/css/css3_shadows_box.asp
+  16. https://codepen.io/shooft/pen/xbKwdJr?editors=0110
+  17. https://www.w3schools.com/howto/howto_css_flip_image.asp
+  18. https://www.a11yproject.com/posts/how-to-hide-content/
+  19. https://codepen.io/sosuke/full/Pjoqqp
+  20. https://codepen.io/shooft/pen/JjQLVeB?editors=1000
+  21. Thomas Norden
+  22. Tom van Droffelaar
+  23. Kim Dekker
+  24. Ali Ahmed
+  25. En uiteraard Sanne 't Hooft
+
 
 </details>

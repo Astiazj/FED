@@ -1,427 +1,581 @@
-/****************** #MAIN *************************/
- 
-
 /******************* #BANNER ********************/
 
-/* Vragen hoe dit moet met ruimte rechts en links en hoe je alles behalve de image kan selecteren */
-main section:nth-of-type(1) {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 40vh 50vh;
+main {
+  position: relative;
+  top: 3em;
+}
+
+main > section:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40vh 50vh;
 }
 
 main section:nth-of-type(1) img {
-	z-index: -10;
-	width: 100%;
-	height: auto;
-	align-self: stretch;
-	object-fit: cover;
-	grid-column: 1/-1;
-	grid-row: 1/-1;
+  z-index: -10;
+  width: 100%;
+  height: auto;
+  align-self: stretch;
+  object-fit: cover;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 }
 
 main section:nth-of-type(1) section {
-    grid-column: 1;
-    grid-row: 2/3;
-    background-color: var(--huiskleur);
-	max-height: 35vh;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin: 2em;
-    padding: 1.5em 1.5em 0em 1.5em;
-    justify-content: space-between;
-	align-self: flex-end;
+  grid-column: 1;
+  grid-row: 2/3;
+  background-color: var(--huiskleur);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 2em;
+  padding: 1.5em 1.5em 0em 1.5em;
+  justify-content: space-between;
+  align-self: flex-end;
 }
 
-main section:nth-of-type(1) section h2 {
-    font-size: 2em;
-    line-height: 1em;
-    margin: 0em;
-    margin-right: .5em;
+main section:nth-of-type(1) section h3 {
+  font-size: 2em;
+  line-height: 1em;
+  margin: 0em;
+  margin-right: 0.5em;
 }
 
 main section:nth-of-type(1) section p {
-    font-size: .8em;
-    font-weight: 300;
+  font-size: 0.8em;
+  font-weight: 300;
 }
 
-/* BUTTON HALVE CIRKEL (BRON: SANNE) */
 main section:nth-of-type(1) section a {
-    display:inline-flex;
-	height:3.6em;
-	padding: 1em 1em 1em 3em;
-    width: 100%;
-    margin: 0;
+  display: flex;
+  height: 3.6em;
+  margin: 0;
 
-	background:var(--color-background);
-	align-items:center;
+  background-color: var(--zoeken);
+  align-items: center;
 
-	background-image: 
-	radial-gradient(
-		circle at left center,
-		var(--color-background) 0 1.5em, 
-		var(--zoeken) 1em 100%
-		);
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+  transition: 0.2s;
+}
 
-	text-decoration: none;
-	color:white;
-    font-size: .8em;
-    justify-content: center;
+main section:nth-of-type(1) section a:hover {
+  background-color: var(--zoekendonker);
+}
+
+main section:nth-of-type(1) section a img {
+  position: relative;
+  left: 0;
+  height: 3em;
+  width: auto;
+  z-index: 10;
+  order: -1;
+  display: flex;
+  align-self: center;
+  margin-right: 4em;
 }
 
 @media (width > 37em) {
+  main > section:nth-of-type(1) {
+    align-items: flex-end;
+    grid-template-rows: 50vh 30vh;
+  }
 
-    main > section:nth-of-type(1){
-        align-items: flex-end;
-    } 
+  main section:nth-of-type(1) section {
+    margin: 1.5em 2em 2em 2em;
+    display: grid;
+    grid-template-columns: 50vw 30vw;
+    height: fit-content;
+    width: 55vw;
+    align-items: flex-end;
+  }
 
-    main section:nth-of-type(1) section {
-        margin: 1.5em 2em 2em 2em;
-        display: grid;
-        grid-template-columns: 50vw 30vw;
-        grid-template-rows: 10vh 10vh;
-        height: 23.8vh;
-        width: 55vw;
-        align-items: flex-end;
-    }
+  main section:nth-of-type(1) section h3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 3em;
+    max-width: 50vw;
+  }
 
-    main section:nth-of-type(1) section h2 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin-right: 0;
-        max-width: 50vw;
-    }
+  main section:nth-of-type(1) section p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 50vw;
+  }
 
-    main section:nth-of-type(1) section p {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        max-width: 50vw;
-    }
-    
-    main section:nth-of-type(1) section a {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        max-width: 12em;
-    }
+  main section:nth-of-type(1) section a {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-width: 12em;
+  }
+
+  main section:nth-of-type(1) section a img {
+    margin-right: 1em;
+  }
+}
+
+@media (width > 48em) {
+  main section:nth-of-type(1) section {
+    width: 25em;
+    height: fit-content;
+    grid-template-columns: 40vw 30vw;
+  }
+
+  main section:nth-of-type(1) section h3 {
+    width: 100%;
+    font-size: 2.5em;
+  }
+}
+
+@media (width > 58em) {
+  main section:nth-of-type(1) section {
+    grid-template-columns: 30vw 30vw;
+  }
+}
+
+@media (width > 65em) {
+  main section:nth-of-type(1) section {
+    grid-template-columns: 25vw 30vw;
+  }
 }
 
 /* **********************#BANNEREND************** */
 
-
-
 /* **********************#VOORSTELLINGEN************** */
 
 main ul {
-	list-style: none;
+  list-style: none;
 }
 
-main ul:nth-of-type(1) {
-	display: flex;
-	flex-direction: column;
-	padding: 0;
-	font-family: 'DINB';
-	margin: 0em 1em;
+main > section > ul:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  font-family: "DINB";
+  margin: 0em 1em;
 }
 
-main ul:nth-of-type(1) li {
-	color: var(--color-background);
-    height: 80vh;
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 40vh 40vh;
-    margin: .5em;
+main > section > ul:nth-of-type(1) li {
+  color: var(--color-background);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40vh 50vh;
+  margin: 0.5em;
 }
 
-main ul:nth-of-type(1) li section {
-    display: flex;
-    flex-direction: column;
-    grid-row: 2/-1;
-    grid-column: 1/-1;
-    margin: 2em;
-    justify-content: center;
+main > section > ul:nth-of-type(1) li section {
+  display: flex;
+  flex-direction: column;
+  grid-row: 2/-1;
+  grid-column: 1/-1;
+  margin: 2em;
+  justify-content: center;
+  background-color: rgba(227, 24, 24, 0.7);
+  padding: 1em;
+  max-width: 25em;
 }
 
-main ul:nth-of-type(1) img {
-	z-index: -10;
-	width: 100%;
-	height: auto;
-	align-self: stretch;
-	object-fit: cover;
-	grid-column: 1/-1;
-	grid-row: 1/-1;
+main > section > ul:nth-of-type(1) img {
+  z-index: -10;
+  width: 100%;
+  height: auto;
+  align-self: stretch;
+  object-fit: cover;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 }
 
-main ul:nth-of-type(1) h2 {
-	font-weight: 700;
-	font-size: 2em;
-	margin:0em;
-	padding:0em;
-	color: var(--color-background);
-	text-transform: uppercase;
-	align-content: end;
+main > section > ul:nth-of-type(1) h3 {
+  font-weight: 700;
+  font-size: 2em;
+  margin: 0;
+  padding: 0em;
+  color: var(--color-background);
+  text-transform: uppercase;
+  width: fit-content;
+  width: 6em;
+  word-wrap: break-word;
 }
 
-main ul:nth-of-type(1) h3 {
-	font-weight: 300;
-	align-content: start;
-	margin: .5em 0em;
-	font-size: .8em;
+main > section > ul:nth-of-type(1) h4 {
+  font-weight: 300;
+  align-content: start;
+  margin: 0.5em 0em;
+  font-size: 0.8em;
 }
 
-main ul:nth-of-type(1) p {
-	display: flex;
-	font-family: 'DINB';
-	font-weight: 300;
-	font-size: .8em;
-	margin: 0em;
-	padding: .3em 1em 1em 0em;
-	color: var(--color-background);
-	align-items: center;
+main > section > ul:nth-of-type(1) p {
+  display: flex;
+  font-family: "DINB";
+  font-weight: 300;
+  font-size: 0.8em;
+  margin: 0em;
+  padding: 0.3em 1em 1em 0em;
+  color: var(--color-background);
+  align-items: center;
 }
 
-main ul:nth-of-type(1) a {
+main > section > ul:nth-of-type(1) a {
+  display: flex;
+  margin: 0;
+  width: 10em;
 
-	display:inline-flex;
-	height:3em;
-	padding: 1em 1em 1em 2.5em;
-    max-width: 10em;
+  background-color: var(--winkelwagentje);
+  align-items: center;
 
-	background:var(--color-background);
-	align-items:center;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: lowercase;
+  transition: 0.2s;
+}
 
-	background-image: 
-	radial-gradient(
-		circle at left center,
-		var(--color-background) 0 1.3em, 
-		var(--winkelwagentje) 1em 100%
-		);
+main > section > ul:nth-of-type(1) a:hover {
+  background-color: var(--winkelwagentjedonker);
+}
 
-	margin-right: 30vw;
-    margin-top: 1em;
-    font-size: .8em;
-    text-decoration: none;
-	color: black;
+main > section > ul:nth-of-type(1) a img {
+  position: relative;
+  left: 0;
+  height: 3em;
+  width: auto;
+  z-index: 10;
+  order: -1;
+  display: flex;
+  align-self: center;
+  margin-right: 1em;
+}
+
+main > section > ul:nth-of-type(1) a:hover {
+  color: var(--color-background);
+}
+
+@media (width > 25em) {
+  main > section > ul:nth-of-type(1) h3 {
+    width: 100%;
+  }
 }
 
 @media (width > 48em) {
-	main ul:nth-of-type(1) {
-		display: grid;
-		grid-template-columns: 50vw 50vw;
-		grid-template-rows: repeat(3, 1fr);
-		margin: 2em 1em;
-	}
-	
-	/* main ul:nth-of-type(1) li:not(:nth-of-type(1)) {
-		
-	} */
+  main > section > ul:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 2em 1em;
+    align-items: center;
+    justify-content: center;
+  }
 
-	main ul:nth-of-type(1) li:nth-of-type(even) {
-		margin: 0 .5em 1em 3em;
-	}
+  main > section > ul:nth-of-type(1) li:nth-of-type(even) {
+    margin: 0 0.5em 1em 1em;
+  }
 
-	main ul:nth-of-type(1) li:nth-child(odd) {
-		margin: 0 3em 1em .5em;
-	}
+  main > section > ul:nth-of-type(1) li:nth-child(odd) {
+    margin: 0 1em 1em 0.5em;
+  }
 
-	main ul:nth-of-type(1) li section {
-		margin-top: 0;
-	}
+  main > section > ul:nth-of-type(1) li section {
+    margin-top: 0;
+    height: fit-content;
+    display: flex;
+    align-self: flex-end;
+  }
 
-	main ul:nth-of-type(1) li:nth-of-type(1) {
-		grid-column: 1/-1;
-		margin: 0 3em;
-	}
+  main > section > ul:nth-of-type(1) li:nth-of-type(1) {
+    grid-column: 1/-1;
+    margin: 0 1em;
+  }
 
-	main ul:nth-of-type(1) img {
-	width: 100%;
-	height: auto;
-	align-self: stretch;
-	object-fit: cover;
-	}
+  main > section > ul:nth-of-type(1) img {
+    width: 100%;
+    height: auto;
+    align-self: stretch;
+    object-fit: cover;
+  }
 
-	main ul:nth-of-type(1) h2 {
-		font-size: 2.5em;
-	}
+  main > section > ul:nth-of-type(1) h3 {
+    font-size: 2.5em;
+  }
 
-	main ul:nth-of-type(1) h3 {
-		font-size: 1em;
-		font-weight: 400;
-	}
+  main > section > ul:nth-of-type(1) h4 {
+    font-size: 1em;
+    font-weight: 400;
+  }
 
-	main ul:nth-of-type(1) a {
-		margin-right: 0;
-		margin-top:0em;
-		height: 4em;
-	}
-	
-
+  main > section > ul:nth-of-type(1) a {
+    margin-right: 0;
+    margin-top: 0em;
+    height: 4em;
+  }
 }
-
 
 /* *******************#VOORSTELLINGENEND************* */
 
-
 /******************* ARTIKELEN *************/
 
-
-
-main ul:nth-of-type(2) {
-	display: flex;
-	flex-direction: row;
-	margin: 0em;
-	padding: 0em;
-  	gap: 0em;
-  	overflow-x: auto;
-  	scroll-snap-type: x mandatory;
-	background-color: white;
+main > section:nth-of-type(2) > section {
+  margin-top: 2em;
+  display: flex;
+  margin: 0;
+  position: relative;
 }
 
-main ul:nth-of-type(2) li {
-	flex-basis: 90%;
-	flex-shrink: 0;
-	align-items: center;
-	scroll-snap-align: center;
-	margin: 1em;
-	background-color: var(--color-background);
-	padding:0em;
-	padding-bottom: 1em;
+main > section:nth-of-type(2) > section > ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  gap: 0em;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  order: 2;
+  scroll-behavior: smooth;
 }
 
-main ul:nth-of-type(2) article {
-	justify-content: center;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
+main > section:nth-of-type(2) > section > ul > li {
+  flex-basis: 85%;
+  margin: 5vh 10vw;
+  flex-shrink: 0;
+  align-items: center;
+  scroll-snap-align: center;
+  background-color: var(--achtergrondbruin);
+  transition: 0.5s;
 }
 
-main ul:nth-of-type(2) h2{
-	margin: .5em .8em;
-	order: 1;
-	text-transform: uppercase;
-	color: var(--huiskleur);
+/* bron: https://www.w3schools.com/css/css3_shadows_box.asp */
+main > section:nth-of-type(2) > section > ul > li:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-main ul:nth-of-type(2) p:nth-of-type(1){
-	margin: 1em 1.5em;
-	order: 0;
-	font-size: .8em;
+main > section:nth-of-type(2) > section > ul > li > article {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-main ul:nth-of-type(2) h2:hover {
-    color: black;
-    cursor: pointer;
+main > section:nth-of-type(2) > section > ul > li > article > a:nth-of-type(1) {
+  order: 2;
+  margin: 0 10%;
+  text-decoration: none;
 }
 
-main ul:nth-of-type(2) article > p:nth-of-type(2){
-	padding: 0em;
-	font-size: .8em;
-	order: 2;
-	margin: 0em 1.6em;
-
+main
+  > section:nth-of-type(2)
+  > section
+  > ul
+  > li
+  > article
+  > a:nth-of-type(1)
+  > h3 {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: var(--huiskleur);
+  margin: 0;
 }
 
-main ul:nth-of-type(2) img{
-	order:-1;
-	padding: 0;
-	z-index: 0;
-	width: 100%;
-	height: auto;
-	align-self: stretch;
-	object-fit: cover;
+main
+  > section:nth-of-type(2)
+  > section
+  > ul
+  > li
+  > article
+  > a:nth-of-type(1)
+  > h3:hover {
+  color: var(--color-text);
 }
 
-main ul:nth-of-type(2) a {
-	order: 3;
-	padding: 0em;
-	font-size: .8em;
-	margin: 1em 1.6em;
-	text-decoration: none;
-	color: var(--zoeken);
-	font-weight: 500;
+main > section:nth-of-type(2) > section > ul > li > article > p:nth-of-type(1) {
+  order: 1;
+  margin: 2% 10%;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+main > section:nth-of-type(2) > section > ul > li > article > p:nth-of-type(2) {
+  order: 3;
+  margin: 2% 10%;
+}
+
+main > section:nth-of-type(2) > section > ul > li > article > img {
+  order: 0;
+  z-index: 10;
+}
+
+main > section:nth-of-type(2) > section > ul > li > article > a:nth-of-type(2) {
+  order: 4;
+  text-decoration: none;
+  color: var(--zoeken);
+  margin: 2% 10%;
+}
+
+main
+  > section:nth-of-type(2)
+  > section
+  > ul
+  > li
+  > article
+  > a:nth-of-type(2):hover {
+  color: var(--color-text);
+}
+
+/* Bron: https://codepen.io/shooft/pen/xbKwdJr?editors=0110 */
+main > section:nth-of-type(2) > section > button {
+  width: 5em;
+  height: 3em;
+  position: absolute;
+  top: calc(50% - 1.5em);
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+main > section:nth-of-type(2) > section > button > img {
+  transition: 0.2s;
+  width: 3em;
+  filter: invert(32%) sepia(97%) saturate(3938%) hue-rotate(344deg)
+    brightness(83%) contrast(118%);
+}
+
+main > section:nth-of-type(2) > section > button > img:hover {
+  filter: invert(11%) sepia(84%) saturate(4749%) hue-rotate(347deg)
+    brightness(74%) contrast(115%);
+}
+
+main > section:nth-of-type(2) > section > button:nth-of-type(1) {
+  order: 1;
+  left: 0em;
+}
+
+main > section:nth-of-type(2) > section > button:nth-of-type(2) {
+  order: 3;
+  right: 0em;
+  /* bron: https://www.w3schools.com/howto/howto_css_flip_image.asp */
+  transform: scaleX(-1);
 }
 
 @media (width > 48em) {
-	
-	ul:nth-of-type(2) article {
-		width: 15em;
-	}
+  main > section:nth-of-type(2) > section > ul > li {
+    flex-basis: 50%;
+    margin: 1em;
+    scroll-snap-align: start;
+  }
 
-
+  main > section:nth-of-type(2) > section > ul {
+    margin: 0em 2em;
+  }
 }
 
-/* button carousel vragen */
-/* main section button:nth-of-type(1){
-	font-size:1em;
-	width:3em;
-	height:3em;
-	position:relative;
-	left: 1em;
-	top:calc(50% - 1.5em);
+@media (width > 62em) {
+  main > section:nth-of-type(2) > section > ul > li {
+    flex-basis: 32%;
+    margin: 1em;
+    scroll-snap-align: start;
+  }
+
+  main > section:nth-of-type(2) > section > ul {
+    margin: 0em 2em;
+  }
 }
 
-main button:nth-of-type(2){
-	height: 10vh;
-	font-size:1em;
-	width:3em;
-	height:3em;
-	position:absolute;
-	
-	right: 1em;
-	top:calc(50% - 1.5em);
-} */
+@media (width > 85em) {
+  main > section:nth-of-type(2) > section > ul > li {
+    flex-basis: 25%;
+    margin: 1em;
+    scroll-snap-align: start;
+  }
+
+  main > section:nth-of-type(2) > section > ul {
+    margin: 0em 3em;
+  }
+}
 
 /* *************************ARTIKELEN END*********** */
 
-
 /********************* SUPPORT ******************/
 
+main section:nth-of-type(3) {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 5vw;
+  z-index: 10;
+}
+
 main section:nth-of-type(3) section {
-	display: grid;
-	grid-template-columns: 90vw;
-	grid-template-rows: 40vh 10vh 10vh;
-	margin: 5vw;
-	z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50vh 20vh;
+  margin: 2em 0em 0em 0em;
+  align-items: center;
 }
 
-main section:nth-of-type(3) section h2 {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	margin: 0;
-	padding: 0;
-	z-index: 1;
-	text-transform: uppercase;
-	grid-row: 2/3;
-	grid-column: 1/2;
-	color: var(--color-background);
-	font-size: 2em;
-	text-align: center;
+main section:nth-of-type(3) section h3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  text-transform: uppercase;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  align-self: end;
+  color: var(--color-background);
+  font-size: 2em;
+  text-align: center;
 }
 
-main section:nth-of-type(3) section p {
-	display: flex;
-	justify-content: center;
-	align-items:flex-start;
-	margin: 0;
-	padding: 0;
-	font-weight: 700;
-	z-index: 1;
-	grid-row: 3/4;
-	grid-column: 1/2;
-	color: var(--color-background);
+main section:nth-of-type(3) section a {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  z-index: 1;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  color: var(--color-background);
+  text-decoration: none;
+  transition: 0.3s;
 }
 
+main section:nth-of-type(3) section a:hover {
+  color: var(--hamburgermenu);
+}
 
 main section:nth-of-type(3) section img {
-	grid-column: 1/-1;
-	grid-row: 1/-1;
-	z-index: 0;
-	width: 100%;
-	height: auto;
-	align-self: stretch;
-	object-fit: cover;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  align-self: stretch;
+  object-fit: cover;
+  padding: 0;
+}
+
+@media (width > 48em) {
+  main section:nth-of-type(3) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main section:nth-of-type(3) > section > h3 {
+    font-size: 2.5em;
+  }
+
+  main section:nth-of-type(3) > section:nth-of-type(1) {
+    margin-right: 0.5em;
+  }
+
+  main section:nth-of-type(3) > section:nth-of-type(2) {
+    margin-left: 0.5em;
+  }
 }
 
 /* **************** #SUPPORT END ************************** */
@@ -429,44 +583,74 @@ main section:nth-of-type(3) section img {
 /* ****************** #NIEUWSBRIEF ************************* */
 
 main section:nth-of-type(4) {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 2em 1em;
-	padding: 3em;
-	background-color: var(--huiskleur);
-	color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 1em;
+  padding: 3em;
+  background-color: var(--huiskleur);
+  color: var(--color-background);
 }
 
 main section:nth-of-type(4) h2 {
-	margin: 0;
+  margin: 0;
 }
 
 main section:nth-of-type(4) p {
-	text-align: center;
+  text-align: center;
 }
 
 main section:nth-of-type(4) a {
-	display:inline-flex;
-	height:3.6em;
-	width: 10em;
-	padding: 1em 1em 1em 2.5em;
-	font-size: .8em;
-	margin-top: 1em;
+  display: flex;
+  height: 3.6em;
+  margin: 0;
+  width: 10em;
 
-	background:var(--color-background);
-	align-items:center;
+  background-color: var(--zoeken);
+  align-items: center;
 
-	background-image: 
-	radial-gradient(
-		circle at left center,
-		var(--color-background) 0 1.6em, 
-		var(--zoeken) 1em 100%
-		);
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+  transition: 0.2s;
+}
 
-	text-decoration: none;
-	color: var(--color-background);
+main section:nth-of-type(4) a:hover {
+  background-color: var(--zoekendonker);
+}
 
+main section:nth-of-type(4) a img {
+  position: relative;
+  left: 0;
+  height: 3em;
+  width: auto;
+  z-index: 10;
+  order: -1;
+  display: flex;
+  align-self: center;
+  margin-right: 1em;
+}
+
+@media (width > 48em) {
+  main section:nth-of-type(4) {
+    margin: 2em 2.5em;
+  }
+
+  main section:nth-of-type(4) h2 {
+    font-size: 2em;
+  }
+
+  main section:nth-of-type(4) p {
+    font-size: 1.2em;
+    margin-top: 0em;
+  }
 }
 
 /* ********************** #NIEUWSBRIEF END ***************** */
+
+/* #FOOTERINDEX */
+
+footer {
+  position: relative;
+  top: 3em;
+}

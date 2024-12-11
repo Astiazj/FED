@@ -10,45 +10,320 @@
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link href="styles/agenda.css" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="images/klko_logo.png"> <!--in figma vierkantje maken van logo-->
+	<link rel="icon" type="image/x-icon" href="images/klko_logo.png"> 
 </head>
 
 <body>
     <header>
+		<a href="#mainagenda" class="skip">ga meteen naar de content</a>
 		<section>
 			<h1 class="visually_hidden">De kleine komedie</h1>
-			<img src="images/kk_logo_nav.svg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
+			<a href="index.html">
+				<img src="images/kk_logo_nav.svg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
+			</a>
 		</section>
 
 		<nav>
 			<ul>
 				<li>
-					<a href="#">
-						<span class="visually_hidden">winkelwagentje</span>
-						<img src="images/winkelwagen.svg" alt=""> <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
-					</a>
+					<section>
+						<h2 class="visually_hidden">Navigatie</h2>
+						<button aria-label="winkelwagen">
+							<span class="visually_hidden">winkelwagentje</span>
+							<img src="images/winkelwagen.svg" alt=""> <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
+						</button>
+						<section>
+							<h3 class="visually_hidden">winkelmandje</h3>
+							<div>
+								<h4>winkelmandje</h4>
+								<img src="images/winkelwagen.svg" alt="">
+							</div>
+							<div>
+								<p>Je winkelmandje is leeg</p>
+								<img src="images/leeg.svg" alt="">
+							</div>
+							<div>
+								<a href="#">Verder winkelen</a>
+								<a href="#">Stoelen kiezen</a>
+							</div>
+							<button aria-label="sluiten">
+								<img src="images/kruis.svg" alt="">
+							</button>
+						</section>
+					</section>
 				</li>
+
 				<li>
-					<a href="#">
-						<span class="visually_hidden">Zoeken</span>
-						<img src="images/vergrootglas.svg" alt="">
-					</a>
+					<nav>
+						<button aria-label="zoeken">
+							<span class="visually_hidden">Zoeken</span>
+							<img src="images/vergrootglas.svg" alt="">
+						</button>
+						<section>
+							<h2 class="visually_hidden">zoeken</h2>
+							<form>
+								<label class="visually_hidden" for="tekst">Zoeken</label>
+								<input type="text" id="tekst" placeholder="Zoek op naam, voorstelling...">
+							</form>
+							<a href="#">
+								<span class="visually_hidden">zoeken</span>
+								<img src="images/vergrootglas.svg" alt="">
+							</a>
+							<button aria-label="sluiten">
+								<span class="visually_hidden">Sluiten</span>
+								<img src="images/kruis.svg" alt="">
+							</button>
+						</section>
+					</nav>
 				</li>
+
 				<li>
-					<a href="#">
+					<nav>
 						<span class="visually_hidden">Menu</span>
 						<!-- bron: https://codepen.io/shooft/pen/JjQLVeB?editors=1000 -->
 						<button aria-label="menu" aria-expanded="false">
-							<span></span>
-							<span></span>
-							<span></span>
+							<!-- bron: https://www.svgrepo.com/svg/532195/menu -->
+							<img src="images/hamburger.svg" alt="">
 						</button>
-					</a>
+						<div>
+						<ul>
+								<li>
+									<a href="agenda.html">Programma & kaarten</a>
+								</li>
+								<li>
+									<a href="#">Informatie</a>
+								</li>
+								<li>
+									<a href="#">Steun ons</a>
+								</li>
+								<li>
+									<a href="#">Verhuur</a>
+								</li>
+								<li>
+									<a href="#">Nieuws</a>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+								</li>
+								<li>
+									<a href="#">Mijn theater</a>
+									<!-- bron: https://www.svgrepo.com/svg/454078/account -->
+									<img src="images/account.svg" alt="">
+								</li>
+								<li>
+									<a href="agenda.html">Programma & kaarten</a>
+								</li>
+								<li>
+									<a href="#">Steun ons</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
 				</li>
 			</ul>
 		</nav>
 	</header>
 
+	<main id="mainagenda">
+		<section>
+			<h2 class="visually_hidden">Filters</h2>	
+			<section>
+			<h2>Agenda</h2>
+			<a href="#">Klik hier voor seizoen</a>
+			</section>
+		</section>
+
+		<section>
+			<h2 class="visually_hidden">Filters</h2>
+			<section>
+				<h3 class="visually_hidden">Filter</h3>
+				<form>
+					<label for="datum" class="visually_hidden">Filter op datum</label>
+					<input type="date" id="datum">
+				</form>
+				<a href="#">Minder filters
+					<img src="images/filter.svg" alt="">
+				</a>
+			</section>
+
+			<section>
+				<h3 class="visually_hidden">Filteritems</h3>
+				<ul>
+					<li>Cabaret</li>
+					<li>Language no problem</li>
+					<li>Première</li>
+					<li>Stand-up</li>
+					<li>Actueel</li>
+					<li>Theaterconcert</li>
+					<li>Kleinkunst</li>
+				</ul>
+				<button aria-label="Meer filters">Meer +</button>
+			</section>
+		</section>
+
+	<section>
+		<h2 class="visually_hidden">Programma</h2>
+		<ul>
+			<li>
+				<h3>Alex Ploeg</h3>
+				<h4>Unplugged - première</h4>
+				<img src="images/alexploeg.webp" alt="foto van Alex Ploeg">
+				<p><time datetime="2024-12-10">Di 10 Dec</time> - <time datetime="2025-05-23">vr 23 mei</time></p>
+				<p>★★★★ ‘Met EGO bewijst hij dat hij meer is dan een goede grappenmaker.’ (Trouw)</p>
+				<ul>
+					<li>Zelfspot</li>
+				</ul>
+				<p>€11,00-€26,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="">
+				</button>
+				<div>
+				<a href="#">speeldata ⬇
+					<img src="images/linkbutton.svg" alt="">
+				</a>
+				</div>
+			</li>
+			<li>
+				<h3>Saman Amini</h3>
+				<h4>Saman Amini's Onaantastbaar - in KomedieLAB</h4>
+				<img src="images/samanamani.webp" alt="foto van Saman Amini">
+				<p><time datetime="2024-12-10 20:15">Di 10 Dec</time> en <time datetime="2024-12-11 22:00">wo 11 dec</time></p>
+				<p>Is het cabaret? Is het een concert? Het is het allemaal tegelijk. Laat dat maar over aan Black Sheep Can Fly.</p>
+				<ul>
+					<li>Met liedjes</li>
+					<li>Cabaret</li>
+				</ul>
+				<p>€20,00</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="">
+				</button>
+				<div>
+					<a href="#">laatste kaarten
+						<img src="images/linkbutton.svg" alt="">
+					</a>
+				</div>
+			</li>
+			<li>
+				<h3>Nina's Femilicious Posse</h3>
+				<img src="images/nina.webp" alt="foto van Femi van Elshuis">
+				<h4>Een posse vol feministische fanaten - in KomedieLAB</h4>
+				<p><time datetime="2024-12-13 20:15">Vr 13 Dec</time> - <time datetime="2025-04-24 22:00">do 24 apr</time></p>
+				<p>Het wordt kut*. Want ons theater wordt opnieuw overgenomen door een horde vrouwen.</p>
+				<ul>
+					<li>Met gasten</li>
+				</ul>
+				<p>€22,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="">
+				</button>
+				<div>
+					<a href="#">speeldata ⬇
+						<img src="images/linkbutton.svg" alt="">
+					</a>
+				</div>
+			</li>
+			<li>
+				<h3>Boekenborrel</h3>
+				<h4>Joris Bijdendijk</h4>
+				<img src="images/boekenborrel.jpg" alt="foto van Joris Bijdendijk">
+				<p><time datetime="2024-12-14 15:00">Vr 6 Dec 15:00 uur</time></p>
+				<p>Welke kookboeken staan in de keuken van sterrenchef Joris Bijdendijk?</p>
+				<ul>
+					<li>Matinee</li>
+				</ul>
+				<p>€16,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="">
+				</button>
+				<div>
+					<a href="#">kaarten
+						<img src="images/linkbutton.svg" alt="">
+					</a>
+				</div>
+			</li>
+			<li>
+				<h3>Wishful Singing & Nicolien Mizee</h3>
+				<h4>De ideale kerst</h4>
+				<img src="images/nicolien.webp" alt="foto van Nicolien Mizee">
+				<p><time datetime="2024-12-15 20:15">Zo 15 Dec 20.15 uur</time></p>
+				<p>Vijf bewogen en bewierookte zangeressen en een bestsellerauteur schuine streep columniste gaan op zoek naar dat echte kerstgevoel.</p>
+				<ul>
+					<li>Theaterconcert</li>
+				</ul>
+				<p>€11,25-€26,00</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="">
+				</button>
+				<div>
+					<a href="#">laatste kaarten
+						<img src="images/linkbutton.svg" alt="">
+					</a>
+				</div>
+			</li>
+			<li>
+				<h3>Ruud Smulders</h3>
+				<h4>Rudiversum</h4>
+				<img src="images/ruud.webp" alt="foto van Ruud Smulders">
+				<p><time datetime="2024-12-16 20:15">Vr 6 Dec 20.15 uur</time></p>
+				<p>★★★★★ 'Smulders heeft met RUDIVERSUM een unieke bijdrage geleverd aan de Nederlandse theaterscene (die niet onopgemerkt mag blijven).' (GeenStijl)</p>
+				<ul>
+					<li>Cabaret</li>
+				</ul>
+				<p>€10,75-€25,00</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="">
+				</button>
+				<div>
+					<a href="#">kaarten
+						<img src="images/linkbutton.svg" alt="">
+					</a>
+				</div>
+			</li>
+			<li>
+				<h3>Jan Beuving</h3>
+				<h4>2025-1</h4>
+				<img src="images/beuving.webp" alt="foto van Jan Beuving">
+				<p><time datetime="2024-12-17 20:15">Di 17 Dec</time> - <time datetime="2024-12-19 22:00">Do 19 Dec</time></p>
+				<p>★★★★★ 'Een van de spannendste cabaretiers van dit moment.' (Trouw)</p>
+				<ul>
+					<li>Cabaret</li>
+				</ul>
+				<p>€11,50-€27,50</p>
+				<button aria-label="Favoriet"><img src="images/hart.svg" alt="">
+				</button>
+				<div>
+					<a href="#">wachtlijst ⬇
+						<img src="images/linkbutton.svg" alt="">
+					</a>
+				</div>
+			</li>
+			<li>
+				<h3>Rayen Panday & Friends</h3>
+				<h4>All We Want For Christmas</h4>
+				<img src="images/rayenklein.webp" alt="foto van Rayen Panday">
+				<p><time datetime="2024-12-06 20:15">Vr 6 Dec 20.15 uur</time> - <time datetime="2024-12-06 22:00">22.00 uur</time></p>
+				<p>★★★★ 'Naast pure cabaretliedjes toont Schippers een grote muzikale veelzijdigheid.' [Volkskrant]</p>
+				<ul>
+					<li>Met Gasten</li>
+					<li>Cabaret</li>
+				</ul>
+				<p>€14,00-€27,50</p>
+				<button aria-label="Favoriet">
+					<img src="images/hart.svg" alt="">
+				</button>
+				<div>
+					<a href="#">speeldata ⬇
+						<img src="images/linkbutton.svg" alt="">
+					</a>
+				</div>
+			</li>
+		</ul>
+		<div>
+			<p>1 ⬇ van 14</p>
+			<a href="#">volgende</a>
+		</div>
+	</section>
+	</main>
 
     <footer>
 		<section>
@@ -64,10 +339,11 @@
 
 		<section>
 			<h3>Kassa</h3>
-			<p>020 624 05 34</p> <!--speciaal label voor een telefoonnummer?-->
+			<!-- bron: ChatGPT (prompt: hoe kan ik semantisch een telefoonnummer opschrijven in html) -->
+			<a href="tel:+206240534">020 624 05 34</a>
 			<p>De kassa is bereikbaar op voorstellingsdagen vanaf 16 uur (bij matinees vanaf 13 uur).</p>
 			<p>Op zondagen zonder voorstelling is de kassa gesloten.</p>
-			<p>Heb je vragen? Stuur dan een mailtje naar kassa@dekleinekomedie.nl</p>
+			<p>Heb je vragen? Stuur dan een mailtje naar <a href="mailto:kassa@dekleinekomedie">kassa@dekleinekomedie.nl</a></p>
 		</section>
 
 		<section>
@@ -90,11 +366,13 @@
 
 		<section>
 			<h3>Meld je aan voor de nieuwsbrief</h3>
-			<a href="#">inschrijven</a>
+			<a href="#">inschrijven
+				<img src="images/linkbutton.svg" alt="">
+			</a>
 		</section>
 
 		<section>
-			<p class="visually_hidden">Fonds Podium Kunsten</p>
+			<h3 class="visually_hidden">Fonds Podium Kunsten</h3>
 			<img src="images/fpk.webp" alt="logo van Fonds Podium Kunsten">
 		</section>
 
@@ -102,7 +380,7 @@
 
 
 
-
+	<script defer src="scripts/script.js"></script>
 
 
 </body>
