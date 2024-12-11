@@ -287,7 +287,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   17. https://www.w3schools.com/howto/howto_css_flip_image.asp
   18. https://www.a11yproject.com/posts/how-to-hide-content/
   19. https://codepen.io/sosuke/full/Pjoqqp
-  20. 
+  20. https://codepen.io/shooft/pen/JjQLVeB?editors=1000
   21. Thomas Norden
   22. Tom van Droffelaar
   23. Kim Dekker

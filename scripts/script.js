@@ -12,19 +12,16 @@ const winkelNav = document.querySelector("nav > ul:nth-of-type(1) > li:nth-of-ty
 const rechtsButton = document.querySelector("main > section:nth-of-type(2) > section > button:nth-of-type(2)");
 const linksButton = document.querySelector("main > section:nth-of-type(2) > section > button:nth-of-type(1)");
 const artikelList = document.querySelector("main > section:nth-of-type(2) > section > ul");
+const hamburgerButton = document.querySelector("nav > ul > li:nth-of-type(3) > nav > button");
 
-menuButton.onclick = toggleMenu;
 zoekButton.onclick = aanZoek;
 sluitZoek.onclick = uitZoek;
 winkelButton.onclick = aanWinkel;
 sluitWinkel.onclick = uitWinkel;
 rechtsButton.onclick = gaVolgende;
 linksButton.onclick = gaTerug;
+hamburgerButton.onclick = hamburgerKlik;
 
-
-function toggleMenu() {
-    deNav.classList.toggle("toonMenu");
-}
 
 function aanZoek() {
     zoekNav.classList.add("toonZoek");
@@ -48,6 +45,17 @@ function gaVolgende() {
 
 function gaTerug() {
     artikelList.scrollLeft = artikelList.scrollLeft - artikelList.offsetWidth;
+}
+
+function hamburgerKlik() {
+    if (hamburgerButton.ariaExpanded == "false") {
+        hamburgerButton.ariaExpanded = "true"
+    }
+    else {
+        hamburgerButton.ariaExpanded = "false"
+    }
+    
+    deNav.classList.toggle("toonMenu");
 }
 
 

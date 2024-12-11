@@ -21,6 +21,10 @@
 	--hamburgermenu:#990008;
 	--achtergrond:#FFFFFF;
 	--achtergrondbruin:#f5f5ec;
+	--huiskleurdonker: #c21616;
+	--winkelwagentjedonker:#eca31a;
+	--zoekendonker:#9e073c;
+	--hamburgermenudonker:#8a0007;
 }
 
 /****************/
@@ -151,20 +155,35 @@ header > nav > ul:nth-of-type(1) > li {
 
 nav > ul:nth-of-type(1) > li:nth-of-type(1) {
 	background-color: var(--winkelwagentje);
+	transition: .2s;
 }
 
 nav > ul:nth-of-type(1) > li:nth-of-type(2) {
 	background-color: var(--zoeken);
+	transition: .2s;
 }
 
 nav > ul:nth-of-type(1) > li:nth-of-type(3) {
 	background-color: var(--hamburgermenu);
+	transition: .2s;
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(1):hover {
+	background-color: var(--winkelwagentjedonker);
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(2):hover {
+	background-color: var(--zoekendonker);
+}
+
+nav > ul:nth-of-type(1) > li:nth-of-type(3):hover {
+	background-color: var(--hamburgermenudonker);
 }
 
 
 /******************* #WINKELWAGEN ****************/
 nav > ul:nth-of-type(1) > li:nth-of-type(1) > section > button:nth-of-type(1) {
-	background-color: var(--winkelwagentje);
+	background-color: transparent;
 	border: none;
 	position: relative;
 	padding: 0;
@@ -299,7 +318,6 @@ nav > ul:nth-of-type(1) > li:nth-of-type(1) > section.toonWinkel > section {
 	translate: 0% 0%;
 }
 
-
 /******************* #WINKELWAGENEND ****************/
 
 
@@ -318,9 +336,9 @@ nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section {
 	right: 0;
 	left: 0;
 	margin: 0;
-	height: 4em;
+	height: 5em;
 	translate: 0% -100%;
-	transition: .5s;
+	transition: .3s;
 	z-index: 10;
 	background-color: var(--achtergrond);
 	display: flex;
@@ -562,14 +580,52 @@ nav.toonMenu nav > button > img {
 
 }
 
-/* Kruis: */
-/* https://www.svgrepo.com/svg/522086/cross */
 
 /* *********************#HAMBURGERMENU END ************************/
 
 
 /****************** #HAMBURGERKNOP BRON: ... ******************/
 
+header > nav > ul > li > nav > button {
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
+
+header > nav > ul > li > nav > button > span {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	width: 1.5em;
+	height:.25em;
+	background-color: var(--achtergrond);
+	transition-duration: .2s;
+	border-radius: 20px;
+}
+
+header > nav > ul > li > nav > button > span:nth-of-type(1) {
+	transform: translateY(-.6em);
+}
+
+header > nav > ul > li > nav > button > span:nth-of-type(3) {
+	transform: translateY(.6em);
+}
+
+header > nav > ul > li > nav > button[aria-expanded="true"] > span:nth-of-type(1) {
+	transform:rotate(-45deg) scaleX(1.25);
+	border-radius: 30px;
+}
+
+header > nav > ul > li > nav > button[aria-expanded="true"] > span:nth-of-type(2) {
+	opacity: 0;
+}
+
+header > nav > ul > li > nav > button[aria-expanded="true"] > span:nth-of-type(3) {
+	transform: rotate(45deg) scaleX(1.25);
+	border-radius: 30px;
+}
+
+
+/* #HAMBURGERKNOP */
 
 
  /* ****************#EINDEHEADER***************** */
@@ -631,26 +687,40 @@ footer section:nth-of-type(3) a {
 	text-decoration: none;
 }
 
+footer section:nth-of-type(3) a:hover {
+	text-decoration: underline;
+}
+
 footer section:nth-of-type(5) a {
-	display:inline-flex;
+    display:flex;
 	height:3.6em;
+    margin: 0;
 	width: 10em;
-	padding: 1em 1em 1em 2.5em;
-	font-size: .8em;
-	margin-top: 0em;
 
-	background:var(--color-background);
-	align-items:center;
-
-	background-image: 
-	radial-gradient(
-		circle at left center,
-		white 0 1.6em, 
-		var(--zoeken) 1em 100%
-		);
+	background-color:var(--zoeken);
+	align-items: center;
 
 	text-decoration: none;
-	color: var(--color-background);
+	color:white;
+    font-size: .8em;
+	justify-self: center;
+	transition: .2s;
+}
+
+footer section:nth-of-type(5) a:hover {
+	background-color: var(--zoekendonker);
+}
+
+footer section:nth-of-type(5) a img {
+	position: relative;
+	left: 0;
+	height: 3em;
+	width: auto;
+	z-index: 10;
+	order: -1;
+	display: flex;
+	align-self: center;
+	margin-right: 1em;
 }
 
 footer section:nth-of-type(6) {
@@ -711,6 +781,10 @@ footer section:nth-of-type(6) img {
 
 	footer section:nth-of-type(5) h3 {
 		margin-right: 5vw;
+	}
+
+	footer section:nth-of-type(5) a {
+		justify-self: flex-start;
 	}
 
 	footer section:nth-of-type(6) {
