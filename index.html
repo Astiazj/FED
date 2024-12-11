@@ -1,396 +1,483 @@
 <!DOCTYPE html>
 <html lang="nl">
-	
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Joshua Astiazarain Olivera">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>De Kleine Komedie</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link href="styles/index.css" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="../images/klko_logo.png">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Joshua Astiazarain Olivera" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<body>
-	<header>
-		<!-- bron: https://www.w3schools.com/accessibility/accessibility_skip_links.php -->
-		<a href="#main" class="skip">ga meteen naar de content</a>
-		<section>
-			<h1 class="visually_hidden">De kleine komedie</h1>
-			<a href="index.html">
-				<img src="images/kk_logo_nav.svg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
-			</a>
-		</section>
+    <title>De Kleine Komedie</title>
 
-		<nav>	
-			<ul>
-				<li>
-					<section>
-						<h2 class="visually_hidden">Navigatie</h2>
-						<button aria-label="winkelwagen">
-							<span class="visually_hidden">winkelwagentje</span>
-							<img src="images/winkelwagen.svg" alt=""> <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
-						</button>
-						<section>
-							<h3 class="visually_hidden">winkelmandje</h3>
-							<div>
-								<h4>winkelmandje</h4>
-								<img src="images/winkelwagen.svg" alt="">
-							</div>
-							<div>
-								<p>Je winkelmandje is leeg</p>
-								<!-- bron: https://www.svgrepo.com/svg/529849/sad-circle -->
-								<img src="images/leeg.svg" alt=""> 
-							</div>
-							<div>
-								<a href="#">Verder winkelen</a>
-								<a href="#">Stoelen kiezen</a>
-							</div>
-							<button aria-label="sluiten">
-								<!-- bron: https://www.svgrepo.com/svg/522086/cross -->
-								<img src="images/kruis.svg" alt="">
-							</button>
-						</section>
-					</section>
-				</li>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../images/klko_logo.png" />
+  </head>
 
-				<li>
-					<nav>
-						<button aria-label="zoeken">
-							<span class="visually_hidden">Zoeken</span>
-							<!-- bron: https://www.svgrepo.com/svg/479496/magnifying-glass-11 -->
-							<img src="images/vergrootglas.svg" alt="">
-						</button>
-						<section>
-							<h2 class="visually_hidden">zoeken</h2>
-							<form>
-								<label class="visually_hidden" for="zoeken">Zoeken</label>
-								<input type="text" id="zoeken" placeholder="Zoek op naam, voorstelling...">
-							</form>
-							<a href="#">
-								<span class="visually_hidden">zoeken</span>
-								<img src="images/vergrootglas.svg" alt="">
-							</a>
-							<button aria-label="sluiten">
-								<span class="visually_hidden">Sluiten</span>
-								<img src="images/kruis.svg" alt="">
-							</button>
-						</section>
-					</nav>
-				</li>
+  <body>
+    <header>
+      <!-- bron: https://www.w3schools.com/accessibility/accessibility_skip_links.php -->
+      <a href="#main" class="skip">ga meteen naar de content </a>
+      <section>
+        <h1 class="visually_hidden">De kleine komedie</h1>
+        <a href="index.html">
+          <img src="images/kk_logo_nav.svg" alt="logo van de Kleine Komedie" />
+          <!--bron: https://www.dekleinekomedie.nl/ -->
+        </a>
+      </section>
 
-				<li>
-					<nav>
-						<span class="visually_hidden">Menu</span>
-						<!-- bron: https://codepen.io/shooft/pen/JjQLVeB?editors=1000 -->
-						<button aria-label="menu" aria-expanded="false">
-							<!-- bron: https://www.svgrepo.com/svg/532195/menu -->
-							<span></span>
-          					<span></span>
-          					<span></span>
-						</button>
+      <nav>
+        <ul>
+          <li>
+            <section>
+              <h2 class="visually_hidden">Navigatie</h2>
+              <button aria-label="winkelwagen">
+                <span class="visually_hidden">winkelwagentje</span>
+                <img src="images/winkelwagen.svg" alt="" />
+                <!--bron:https://www.svgrepo.com/svg/525741/cart-large-minimalistic -->
+              </button>
+              <section>
+                <h3 class="visually_hidden">winkelmandje</h3>
+                <div>
+                  <h4>winkelmandje</h4>
+                  <img src="images/winkelwagen.svg" alt="" />
+                </div>
+                <div>
+                  <p>Je winkelmandje is leeg</p>
+                  <!-- bron: https://www.svgrepo.com/svg/529849/sad-circle -->
+                  <img src="images/leeg.svg" alt="" />
+                </div>
+                <div>
+                  <a href="#">Verder winkelen</a>
+                  <a href="#">Stoelen kiezen</a>
+                </div>
+                <button aria-label="sluiten">
+                  <!-- bron: https://www.svgrepo.com/svg/522086/cross -->
+                  <img src="images/kruis.svg" alt="" />
+                </button>
+              </section>
+            </section>
+          </li>
 
-						<div>
-						<ul>
-								<li>
-									<a href="agenda.html">Programma & kaarten</a>
-								</li>
-								<li>
-									<a href="#">Informatie</a>
-								</li>
-								<li>
-									<a href="#">Steun ons</a>
-								</li>
-								<li>
-									<a href="#">Verhuur</a>
-								</li>
-								<li>
-									<a href="#">Nieuws</a>
-								</li>
-								<li>
-									<a href="#">Contact</a>
-								</li>
-								<li>
-									<a href="#">Mijn theater</a>
-									<!-- bron: https://www.svgrepo.com/svg/454078/account -->
-									<img src="images/account.svg" alt="">
-								</li>
-								<li>
-									<a href="agenda.html">Programma & kaarten</a>
-								</li>
-								<li>
-									<a href="#">Steun ons</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</li>
-			</ul>
-		</nav>
-	</header>
+          <li>
+            <nav>
+              <button aria-label="zoeken">
+                <span class="visually_hidden">Zoeken</span>
+                <!-- bron: https://www.svgrepo.com/svg/479496/magnifying-glass-11 -->
+                <img src="images/vergrootglas.svg" alt="" />
+              </button>
+              <section>
+                <h2 class="visually_hidden">zoeken</h2>
+                <form>
+                  <label class="visually_hidden" for="zoeken">Zoeken</label>
+                  <input
+                    type="text"
+                    id="zoeken"
+                    placeholder="Zoek op naam, voorstelling..."
+                  />
+                </form>
+                <a href="#">
+                  <span class="visually_hidden">zoeken</span>
+                  <img src="images/vergrootglas.svg" alt="" />
+                </a>
+                <button aria-label="sluiten">
+                  <span class="visually_hidden">Sluiten</span>
+                  <img src="images/kruis.svg" alt="" />
+                </button>
+              </section>
+            </nav>
+          </li>
 
-	<!--Mogelijkheden extra punten
+          <li>
+            <nav>
+              <span class="visually_hidden">Menu</span>
+              <!-- bron: https://codepen.io/shooft/pen/JjQLVeB?editors=1000 -->
+              <button aria-label="menu" aria-expanded="false">
+                <!-- bron: https://www.svgrepo.com/svg/532195/menu -->
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+
+              <div>
+                <ul>
+                  <li>
+                    <a href="agenda.html">Programma & kaarten</a>
+                  </li>
+                  <li>
+                    <a href="#">Informatie</a>
+                  </li>
+                  <li>
+                    <a href="#">Steun ons</a>
+                  </li>
+                  <li>
+                    <a href="#">Verhuur</a>
+                  </li>
+                  <li>
+                    <a href="#">Nieuws</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">Mijn theater</a>
+                    <!-- bron: https://www.svgrepo.com/svg/454078/account -->
+                    <img src="images/account.svg" alt="" />
+                  </li>
+                  <li>
+                    <a href="agenda.html">Programma & kaarten</a>
+                  </li>
+                  <li>
+                    <a href="#">Steun ons</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Mogelijkheden extra punten
 	- Cursor aanpassen
 	- 
 	-->
 
-	<main id="main">
-		<section>
-			<h2 class="visually_hidden">Banner</h2>
-			<section>
-				<h3>Vier kerst met Rayan Panday & friends</h3>
-				<p><time datetime="2024-12-20">vr 20 </time> t/m <time datetime="2024-12-24">di 24 december</time></p>
-				<a href="#">koop hier je kaarten
-					<img src="images/linkbutton.svg" alt="">
-				</a>
-			</section>
-			<img src="images/rayan_groot.webp" alt="foto van Rayan Panday zittend bij een haardvuur">
-		</section>
+    <main id="main">
+      <section>
+        <h2 class="visually_hidden">Banner</h2>
+        <section>
+          <h3>Vier kerst met Rayan Panday & friends</h3>
+          <p>
+            <time datetime="2024-12-20">vr 20 </time> t/m
+            <time datetime="2024-12-24">di 24 december</time>
+          </p>
+          <a href="#"
+            >koop hier je kaarten
+            <img src="images/linkbutton.svg" alt="" />
+          </a>
+        </section>
+        <img
+          src="images/rayan_groot.webp"
+          alt="foto van Rayan Panday zittend bij een haardvuur"
+        />
+      </section>
 
-		<section>
-			<h2 class="visually_hidden">Voorstellingen</h2>
-		<ul>
-			<li>
-				<section>
-				<h3>Boekenborrel</h3>
-				<h4>Joris Bijdendijk</h4>
-				<p><time datetime="2024-12-14 15:00">za 14 dec 15.00 uur </time>-<time datetime="2024-12-14 16:00"> 16.00 uur</time></p>
-				<a href="#">Kaarten
-					<img src="images/linkbuttongrijs.svg" alt="">
-				</a>
-				</section>
-				<img src="images/boekenborrel.jpg" alt="foto van Joris Bijdendijk">
-			</li>
+      <section>
+        <h2 class="visually_hidden">Voorstellingen</h2>
+        <ul>
+          <li>
+            <section>
+              <h3>Boekenborrel</h3>
+              <h4>Joris Bijdendijk</h4>
+              <p>
+                <time datetime="2024-12-14 15:00">za 14 dec 15.00 uur </time
+                >-<time datetime="2024-12-14 16:00"> 16.00 uur</time>
+              </p>
+              <a href="#"
+                >Kaarten
+                <img src="images/linkbuttongrijs.svg" alt="" />
+              </a>
+            </section>
+            <img
+              src="images/boekenborrel.jpg"
+              alt="foto van Joris Bijdendijk"
+            />
+          </li>
 
-			<li>
-				<section>
-				<h3>Alex Ploeg</h3>
-				<h4>Unplugged - première</h4>
-				<p><time datetime="2024-12-11">wo 11 dec</time> - <time datetime="2025-05-23">vr 23 mei</time></p>
-				<a href="#">kaarten
-					<img src="images/linkbuttongrijs.svg" alt="">
-				</a>
-				</section>
-				<img src="images/alexploeg.webp" alt="foto van Alex Ploeg">
-			</li>
+          <li>
+            <section>
+              <h3>Alex Ploeg</h3>
+              <h4>Unplugged - première</h4>
+              <p>
+                <time datetime="2024-12-11">wo 11 dec</time> -
+                <time datetime="2025-05-23">vr 23 mei</time>
+              </p>
+              <a href="#"
+                >kaarten
+                <img src="images/linkbuttongrijs.svg" alt="" />
+              </a>
+            </section>
+            <img src="images/alexploeg.webp" alt="foto van Alex Ploeg" />
+          </li>
 
-			<li>
-				<section>
-				<h3>Saman Amini</h3>
-				<h4>Saman Amini's Onaantastbaar - in KomedieLAB</h4>
-				<p><time datetime="2024-12-11 20:15">wo 11 dec 20.15 uur</time> - <time datetime="2024-12-11 22:00">22.00</time></p>
-				<a href="#">laatste kaarten
-					<img src="images/linkbuttongrijs.svg" alt="">
-				</a>
-				</section>
-				<img src="images/samanamani.webp" alt="foto van Saman Amini">
-			</li>
+          <li>
+            <section>
+              <h3>Saman Amini</h3>
+              <h4>Saman Amini's Onaantastbaar - in KomedieLAB</h4>
+              <p>
+                <time datetime="2024-12-11 20:15">wo 11 dec 20.15 uur</time> -
+                <time datetime="2024-12-11 22:00">22.00</time>
+              </p>
+              <a href="#"
+                >laatste kaarten
+                <img src="images/linkbuttongrijs.svg" alt="" />
+              </a>
+            </section>
+            <img src="images/samanamani.webp" alt="foto van Saman Amini" />
+          </li>
 
-			<li>
-				<section>
-				<h3>Nina's Femilicious Posse</h3>
-				<h4>Een posse vol feministische fanaten - in KomedieLAB</h4>
-				<p><time datetime="2024-12-13">vr 13 dec</time> - <time datetime="2025-04-24">do 24 apr</time></p>
-				<a href="#">kaarten
-					<img src="images/linkbuttongrijs.svg" alt="">
-				</a>
-				</section>
-				<img src="images/nina.webp" alt="foto van Femi van Elshuis">
-			</li>
+          <li>
+            <section>
+              <h3>Nina's Femilicious Posse</h3>
+              <h4>Een posse vol feministische fanaten - in KomedieLAB</h4>
+              <p>
+                <time datetime="2024-12-13">vr 13 dec</time> -
+                <time datetime="2025-04-24">do 24 apr</time>
+              </p>
+              <a href="#"
+                >kaarten
+                <img src="images/linkbuttongrijs.svg" alt="" />
+              </a>
+            </section>
+            <img src="images/nina.webp" alt="foto van Femi van Elshuis" />
+          </li>
 
-			<li>
-				<section>
-				<h3>Wishful Singing & Nicolien Mizee</h3>
-				<h4>De ideale kerst</h4>
-				<p><time datetime="2024-12-15 20:15">zo 15 dec 20.15</time> - <time datetime="2024-12-15">22.00 uur</time></p>
-				<a href="#">laatste kaarten
-					<img src="images/linkbuttongrijs.svg" alt="">
-				</a>
-				</section>
-				<img src="images/nicolien.webp" alt="foto van Nicolien Mizee">
-			</li>
-		</ul>
-	
+          <li>
+            <section>
+              <h3>Wishful Singing & Nicolien Mizee</h3>
+              <h4>De ideale kerst</h4>
+              <p>
+                <time datetime="2024-12-15 20:15">zo 15 dec 20.15</time> -
+                <time datetime="2024-12-15">22.00 uur</time>
+              </p>
+              <a href="#"
+                >laatste kaarten
+                <img src="images/linkbuttongrijs.svg" alt="" />
+              </a>
+            </section>
+            <img src="images/nicolien.webp" alt="foto van Nicolien Mizee" />
+          </li>
+        </ul>
 
-		<!-- ARTIIKELEN -->
-		 <!-- bron carousel: https://codepen.io/shooft/pen/xbKwdJr -->
-		<section>
-		<h2 class="visually_hidden">Artikelen</h2>
-		<ul>
-			<li> 
-				<article>
-					<a href="#">
-						<h3>Vacature: Financieel Medewerker</h3>
-					</a>
-					<img src="images/financiele.webp" alt="bannerfoto vacature">
-					<p><time datetime="2024-11-14">do 14 nov</time></p>
-					<p>Vacature! We zijn op zoek naar een financieel medewerker voor in ieder geval 6 maanden. 
-						Heb je een scherp oog voor cijfers, weet je alles van grootboekrekeningen, omzetbelastig en facturatie? Vind je het belangrijk om je werk serieus te nemen, maar ben je niet vies van een grapje op zijn tijd? 
-						Dan pas jij perfect in ons team! Kun jij de cijfers laten kloppen én de sfeer luchtig houden? Dan willen we graag met jou kennismaken.</p>
-					<a href="#">lees verder</a>
-				</article>
-			</li>
+        <!-- ARTIIKELEN -->
+        <!-- bron carousel: https://codepen.io/shooft/pen/xbKwdJr -->
+        <section>
+          <h2 class="visually_hidden">Artikelen</h2>
+          <ul>
+            <li>
+              <article>
+                <a href="#">
+                  <h3>Vacature: Financieel Medewerker</h3>
+                </a>
+                <img src="images/financiele.webp" alt="bannerfoto vacature" />
+                <p><time datetime="2024-11-14">do 14 nov</time></p>
+                <p>
+                  Vacature! We zijn op zoek naar een financieel medewerker voor
+                  in ieder geval 6 maanden. Heb je een scherp oog voor cijfers,
+                  weet je alles van grootboekrekeningen, omzetbelastig en
+                  facturatie? Vind je het belangrijk om je werk serieus te
+                  nemen, maar ben je niet vies van een grapje op zijn tijd? Dan
+                  pas jij perfect in ons team! Kun jij de cijfers laten kloppen
+                  én de sfeer luchtig houden? Dan willen we graag met jou
+                  kennismaken.
+                </p>
+                <a href="#">lees verder</a>
+              </article>
+            </li>
 
-			<li>
-				<article>
-					<a href="#">
-						<h3>line-up volmondig 20 november bekend</h3>
-					</a>
-					<p><time datetime="2024-11-01">vr 1 nov</time></p>
-					<img src="images/volmondig.webp" alt="foto van man met een microfoon, op de achtergrond twee mannen met een elektrische gitaar vast">
-					<p>Aan tafel met Volmondig! Spoken word en spijs. Kunst en kost.
-						Woordchef Luan Buleshkaj presenteert een avond vol
-						smaakvolle woordkunst in KomedieLAB, bij onze buren in Bar
-						Chimi. Luan schotelt ons verschillende acts voor, van kersvers
-						talent tot gevestigde namen. Bekijk de line-up hier.</p>
-					<a href="#">lees verder</a>	
-				</article>
-			</li>
-			
-			<li>
-				<article>
-					<a href="#">
-						<h3>Kaartverkoop IDFA van start</h3>
-					</a>
-					<p><time datetime="2024-10-30">wo 30 okt</time></p>
-					<img src="images/kkbuiten.webp" alt="foto van een theatergebouw">
-					<p>IDFA komt naar De Kleine Komedie! van <time datetime="2024-11-15">vrijdag 15</time> t/m <time datetime="2024-11-18">maandag 18 november</time> verovert de documentaire hier vier dagen lang het theater.
-					De kaartverkoop is gestart, en de documentaires zijn
-					bekend. Ontdek het programma!</p>
-					<a href="#">lees verder</a>
-				</article>
-			</li>
+            <li>
+              <article>
+                <a href="#">
+                  <h3>line-up volmondig 20 november bekend</h3>
+                </a>
+                <p><time datetime="2024-11-01">vr 1 nov</time></p>
+                <img
+                  src="images/volmondig.webp"
+                  alt="foto van man met een microfoon, op de achtergrond twee mannen met een elektrische gitaar vast"
+                />
+                <p>
+                  Aan tafel met Volmondig! Spoken word en spijs. Kunst en kost.
+                  Woordchef Luan Buleshkaj presenteert een avond vol smaakvolle
+                  woordkunst in KomedieLAB, bij onze buren in Bar Chimi. Luan
+                  schotelt ons verschillende acts voor, van kersvers talent tot
+                  gevestigde namen. Bekijk de line-up hier.
+                </p>
+                <a href="#">lees verder</a>
+              </article>
+            </li>
 
-			<li>
-				<article>
-					<a href="#">
-						<h3>Winnaars Cabaretprijzen</h3>
-					</a>
-					<p><time datetime="2024-10-08">di 8 okt</time></p>
-					<img src="images/poeli.webp" alt="foto van de winnaars van de cabaretprijzen">
-					<p><time datetime="2024-10-07">Gisteravond</time> werden de Cabaretprijzen uitgereikt in Theater 
-						Diligentia. Rundfunk, Lisa Ostermann en Peter van Rooijen zijn de winnaars van de Poelifinario. Zij maakten de beste 
-						cabaretprogramma's van afgelopen seizoen. De Neerlands Hoop
-						gaat naar Valentina Tóth. Dé prijs voor het grootste 
-						aanstormende cabarettalent van het seizoen. Wat een gelukvogels!</p>
-					<a href="#">lees verder</a>
-				</article>
-			</li>
+            <li>
+              <article>
+                <a href="#">
+                  <h3>Kaartverkoop IDFA van start</h3>
+                </a>
+                <p><time datetime="2024-10-30">wo 30 okt</time></p>
+                <img
+                  src="images/kkbuiten.webp"
+                  alt="foto van een theatergebouw"
+                />
+                <p>
+                  IDFA komt naar De Kleine Komedie! van
+                  <time datetime="2024-11-15">vrijdag 15</time> t/m
+                  <time datetime="2024-11-18">maandag 18 november</time>
+                  verovert de documentaire hier vier dagen lang het theater. De
+                  kaartverkoop is gestart, en de documentaires zijn bekend.
+                  Ontdek het programma!
+                </p>
+                <a href="#">lees verder</a>
+              </article>
+            </li>
 
-			<li>
-				<article>
-					<a href="#">
-						<h3>Zilveren raampje voor Merijn Scholten</h3>
-					</a>
-					<p><time datetime="2024-10-08">do 26 sep</time></p>
-					<img src="images/bloem.webp" alt="foto van Merijn Scholten op een podium">
-					<p><time datetime="2024-09-26">Vanavond</time> speelde Merijn Scholten zijn debuutvoorstelling Team 
-						Solo voor de 24e en allerlaatste keer bij ons voor een 
-						uitverkochte zaal. Nog nooit eerder in de geschiedenis van De
-						Kleine Komedie heeft een debuutvoorstelling zo vaak
-						uitverkocht gestaan. Na afloop van zijn laatste
-						voorstelling, werd hij door ons geëerd met een Zilveren
-						Raampje. Het Zilveren Raampje is een zilveren broche in 
-						de vorm van het beeldmerk van het beeldmerk van De Kleine Komedie. Het zilveren 
-						raampje werd eerder uitgereikt aan NUHR, Youpp van 't Hek,
-						Lebbis & Jansen, Diederik van Vleuten en Doesjka van Hoogdalem.</p>
-					<a href="#">lees verder</a>
-				</article>
-			</li>
-		</ul>
-		<!-- bron: https://www.svgrepo.com/svg/521965/arrow-left-circle -->
-		<button aria-label="pijl naar links">
-			<img src="images/pijl.svg" alt="">
-		</button>
-		<button aria-label="pijl naar rechts">
-			<img src="images/pijl.svg" alt="">
-		</button>
-		</section>
+            <li>
+              <article>
+                <a href="#">
+                  <h3>Winnaars Cabaretprijzen</h3>
+                </a>
+                <p><time datetime="2024-10-08">di 8 okt</time></p>
+                <img
+                  src="images/poeli.webp"
+                  alt="foto van de winnaars van de cabaretprijzen"
+                />
+                <p>
+                  <time datetime="2024-10-07">Gisteravond</time> werden de
+                  Cabaretprijzen uitgereikt in Theater Diligentia. Rundfunk,
+                  Lisa Ostermann en Peter van Rooijen zijn de winnaars van de
+                  Poelifinario. Zij maakten de beste cabaretprogramma's van
+                  afgelopen seizoen. De Neerlands Hoop gaat naar Valentina Tóth.
+                  Dé prijs voor het grootste aanstormende cabarettalent van het
+                  seizoen. Wat een gelukvogels!
+                </p>
+                <a href="#">lees verder</a>
+              </article>
+            </li>
 
-		</section>
+            <li>
+              <article>
+                <a href="#">
+                  <h3>Zilveren raampje voor Merijn Scholten</h3>
+                </a>
+                <p><time datetime="2024-10-08">do 26 sep</time></p>
+                <img
+                  src="images/bloem.webp"
+                  alt="foto van Merijn Scholten op een podium"
+                />
+                <p>
+                  <time datetime="2024-09-26">Vanavond</time> speelde Merijn
+                  Scholten zijn debuutvoorstelling Team Solo voor de 24e en
+                  allerlaatste keer bij ons voor een uitverkochte zaal. Nog
+                  nooit eerder in de geschiedenis van De Kleine Komedie heeft
+                  een debuutvoorstelling zo vaak uitverkocht gestaan. Na afloop
+                  van zijn laatste voorstelling, werd hij door ons geëerd met
+                  een Zilveren Raampje. Het Zilveren Raampje is een zilveren
+                  broche in de vorm van het beeldmerk van het beeldmerk van De
+                  Kleine Komedie. Het zilveren raampje werd eerder uitgereikt
+                  aan NUHR, Youpp van 't Hek, Lebbis & Jansen, Diederik van
+                  Vleuten en Doesjka van Hoogdalem.
+                </p>
+                <a href="#">lees verder</a>
+              </article>
+            </li>
+          </ul>
+          <!-- bron: https://www.svgrepo.com/svg/521965/arrow-left-circle -->
+          <button aria-label="pijl naar links">
+            <img src="images/pijl.svg" alt="" />
+          </button>
+          <button aria-label="pijl naar rechts">
+            <img src="images/pijl.svg" alt="" />
+          </button>
+        </section>
+      </section>
 
-		<section>
-			<h2 class="visually_hidden">Promotie</h2> 
-			<section>
-				<h3>Steun Ons</h3>
-				<a href="#">en doneer ➔</a>
-				<img src="images/kkrood.webp" alt="logo van de kleine komedie in het rood">
-			</section>
-			<section>
-				<h3>Word Vriend</h3>
-				<a href="#">steun ons ➔</a>
-				<img src="images/kkpaars2.webp" alt="logo van de kleine komedie in het paars">
-			</section>
-		</section>
+      <section>
+        <h2 class="visually_hidden">Promotie</h2>
+        <section>
+          <h3>Steun Ons</h3>
+          <a href="#">en doneer ➔</a>
+          <img
+            src="images/kkrood.webp"
+            alt="logo van de kleine komedie in het rood"
+          />
+        </section>
+        <section>
+          <h3>Word Vriend</h3>
+          <a href="#">steun ons ➔</a>
+          <img
+            src="images/kkpaars2.webp"
+            alt="logo van de kleine komedie in het paars"
+          />
+        </section>
+      </section>
 
-		<section>
-			<h2>nieuwsbrief</h2>
-			<p>Meld je aan voor de nieuwsbrief en blijf op de hoogte van nieuws en bijgeboekte voorstellingen.</p>
-			<a href="#">inschrijven
-				<img src="images/linkbutton.svg" alt="">
-			</a>
-		</section>
+      <section>
+        <h2>nieuwsbrief</h2>
+        <p>
+          Meld je aan voor de nieuwsbrief en blijf op de hoogte van nieuws en
+          bijgeboekte voorstellingen.
+        </p>
+        <a href="#"
+          >inschrijven
+          <img src="images/linkbutton.svg" alt="" />
+        </a>
+      </section>
+    </main>
 
-	</main>
+    <footer>
+      <section>
+        <h2 class="visually_hidden">De kleine komedie</h2>
+        <img src="images/dkk_logo.jpg" alt="logo van de Kleine Komedie" />
+        <!--bron: https://www.dekleinekomedie.nl/ -->
+      </section>
 
-	<footer>
-		<section>
-			<h2 class="visually_hidden">De kleine komedie</h2>
-			<img src="images/dkk_logo.jpg" alt="logo van de Kleine Komedie"> <!--bron: https://www.dekleinekomedie.nl/ -->
-		</section>
+      <section>
+        <h3>Adres</h3>
+        <p>Amstel 56-58</p>
+        <p>1017 AC Amsterdam</p>
+      </section>
 
-		<section>
-			<h3>Adres</h3>
-			<p>Amstel 56-58</p>
-			<p>1017 AC Amsterdam</p>
-		</section>
+      <section>
+        <h3>Kassa</h3>
+        <!-- bron: ChatGPT (prompt: hoe kan ik semantisch een telefoonnummer opschrijven in html) -->
+        <a href="tel:+206240534">020 624 05 34</a>
+        <p>
+          De kassa is bereikbaar op voorstellingsdagen vanaf 16 uur (bij
+          matinees vanaf 13 uur).
+        </p>
+        <p>Op zondagen zonder voorstelling is de kassa gesloten.</p>
+        <p>
+          Heb je vragen? Stuur dan een mailtje naar
+          <a href="mailto:kassa@dekleinekomedie">kassa@dekleinekomedie.nl</a>
+        </p>
+      </section>
 
-		<section>
-			<h3>Kassa</h3>
-			<!-- bron: ChatGPT (prompt: hoe kan ik semantisch een telefoonnummer opschrijven in html) -->
-			<a href="tel:+206240534">020 624 05 34</a>
-			<p>De kassa is bereikbaar op voorstellingsdagen vanaf 16 uur (bij matinees vanaf 13 uur).</p>
-			<p>Op zondagen zonder voorstelling is de kassa gesloten.</p>
-			<p>Heb je vragen? Stuur dan een mailtje naar <a href="mailto:kassa@dekleinekomedie">kassa@dekleinekomedie.nl</a></p>
-		</section>
+      <section>
+        <h3>Volg ons op</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <p class="visually_hidden">Facebook</p>
+              <img src="images/facebook.svg" alt="logo van Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p class="visually_hidden">Twitter</p>
+              <img src="images/twitter.svg" alt="logo van Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p class="visually_hidden">Instagram</p>
+              <img src="images/insta.svg" alt="logo van Instagram" />
+            </a>
+          </li>
+        </ul>
+      </section>
 
-		<section>
-			<h3>Volg ons op</h3>
-			<ul>
-				<li><a href="#">
-					<p class="visually_hidden">Facebook</p>
-					<img src="images/facebook.svg" alt="logo van Facebook">
-				</a></li>
-				<li><a href="#">
-					<p class="visually_hidden">Twitter</p>
-					<img src="images/twitter.svg" alt="logo van Twitter">
-				</a></li>
-				<li><a href="#">
-					<p class="visually_hidden">Instagram</p>
-					<img src="images/insta.svg" alt="logo van Instagram">
-				</a></li>
-			</ul>
-		</section>
+      <section>
+        <h3>Meld je aan voor de nieuwsbrief</h3>
+        <a href="#"
+          >inschrijven
+          <img src="images/linkbutton.svg" alt="" />
+        </a>
+      </section>
 
-		<section>
-			<h3>Meld je aan voor de nieuwsbrief</h3>
-			<a href="#">inschrijven
-				<img src="images/linkbutton.svg" alt="">
-			</a>
-		</section>
+      <section>
+        <h3 class="visually_hidden">Fonds Podium Kunsten</h3>
+        <img src="images/fpk.webp" alt="logo van Fonds Podium Kunsten" />
+      </section>
+    </footer>
 
-		<section>
-			<h3 class="visually_hidden">Fonds Podium Kunsten</h3>
-			<img src="images/fpk.webp" alt="logo van Fonds Podium Kunsten">
-		</section>
-
-	</footer>
-	
-	<script defer src="scripts/script.js"></script>
-</body>
-	
+    <script defer src="scripts/script.js"></script>
+  </body>
 </html>
 
 <!-- om snel een list te maken: ul>li*5 -->
