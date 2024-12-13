@@ -12,18 +12,30 @@
 /*********************/
 :root {
   /* startje */
-  --color-text: #111;
+  color-scheme: light dark;
+  --achtergrond: light-dark(#ffffff, #1d1c1c);
+  --color-text: light-dark(#000000, #ffffff);
+  --grijs: light-dark(gray, black);
   --color-background: #eee;
-  --huiskleur: #e31818;
-  --winkelwagentje: #eebe30;
-  --zoeken: #c3094a;
-  --hamburgermenu: #990008;
-  --achtergrond: #ffffff;
-  --achtergrondbruin: #f5f5ec;
+  --huiskleur: light-dark(#e31818, #8a0007);
+  --huiskleurrood: light-dark(#e31818, #990008);
+  --winkelwagentje: light-dark(#eebe30, #1d1c1c);
+  --winkelwagenicoon: light-dark(#ffffff, #eebe30);
+  --zoeken: light-dark(#c3094a, #1d1c1c);
+  --hamburgermenu: light-dark(#990008, #1d1d1c);
+  --hamburgericoon: light-dark(#ffffff, #990008);
+  --achtergrondbruin: light-dark(#f5f5ec, #252323);
   --huiskleurdonker: #c21616;
   --winkelwagentjedonker: #eca31a;
   --zoekendonker: #9e073c;
   --hamburgermenudonker: #8a0007;
+  --winkelgeel: light-dark(#eebe30, #d89519);
+  --zoekroze: light-dark(#c3094a, #e2145c);
+  --hamburgerrood: light-dark(#990008, #cc0209);
+  --voorstellingbackground: light-dark(
+    rgba(227, 24, 24, 0.7),
+    rgba(153, 0, 8, 0.9)
+  );
 }
 
 /****************/
@@ -111,7 +123,7 @@ header {
   padding: 0 2vw;
   z-index: 100;
 
-  background-color: white;
+  background-color: var(--achtergrond);
 
   display: flex;
   justify-content: space-between;
@@ -131,7 +143,7 @@ header > section:nth-of-type(1) > a > img {
   width: 8em;
   margin: 0em;
   padding: 0em;
-  background-color: white;
+  background-color: var(--achtergrond);
 }
 
 header > nav > ul:nth-of-type(1) {
@@ -195,6 +207,17 @@ header ul:nth-of-type(1) > li > section > button > img {
   filter: invert(1);
 }
 
+@media (prefers-color-scheme: dark) {
+  header ul:nth-of-type(1) > li > section > button > img {
+    filter: brightness(0) invert(78%) sepia(89%) saturate(678%)
+      hue-rotate(335deg) brightness(101%) contrast(87%);
+  }
+
+  header ul:nth-of-type(1) > li > section > button > img:hover {
+    filter: none;
+  }
+}
+
 header ul:nth-of-type(1) > li > section > button > img:hover {
   cursor: pointer;
 }
@@ -238,6 +261,18 @@ nav > ul:nth-of-type(1) > li:nth-of-type(1) > section > section > button:hover {
   cursor: pointer;
 }
 
+@media (prefers-color-scheme: dark) {
+  nav
+    > ul:nth-of-type(1)
+    > li:nth-of-type(1)
+    > section
+    > section
+    > button:hover {
+    filter: invert(78%) sepia(89%) saturate(678%) hue-rotate(335deg)
+      brightness(101%) contrast(87%);
+  }
+}
+
 nav
   > ul:nth-of-type(1)
   > li:nth-of-type(1)
@@ -259,6 +294,18 @@ nav
   order: -1;
   width: 1.3em;
   margin: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav
+    > ul:nth-of-type(1)
+    > li:nth-of-type(1)
+    > section
+    > section
+    > div:nth-of-type(1)
+    > img {
+    filter: invert(1);
+  }
 }
 
 nav
@@ -300,6 +347,19 @@ nav
   order: -1;
 }
 
+@media (prefers-color-scheme: dark) {
+  nav
+    > ul:nth-of-type(1)
+    > li:nth-of-type(1)
+    > section
+    > section
+    > div:nth-of-type(2)
+    > img {
+    filter: brightness(0%) invert(100%) sepia(0%) saturate(7500%)
+      hue-rotate(116deg) brightness(109%) contrast(109%);
+  }
+}
+
 nav
   > ul:nth-of-type(1)
   > li:nth-of-type(1)
@@ -319,7 +379,7 @@ nav
   > div:nth-of-type(3) {
   grid-column: 1/-1;
   grid-row: -2/-1;
-  background-color: var(--zoeken);
+  background-color: var(--zoekroze);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -345,7 +405,7 @@ nav
   > section
   > div:nth-of-type(3)
   > a:nth-of-type(1) {
-  color: var(--achtergrond);
+  color: #ffffff;
 }
 
 nav
@@ -355,7 +415,7 @@ nav
   > section
   > div:nth-of-type(3)
   > a:nth-of-type(1):hover {
-  color: var(--color-text);
+  color: #000000;
 }
 
 nav
@@ -365,8 +425,8 @@ nav
   > section
   > div:nth-of-type(3)
   > a:nth-of-type(2) {
-  color: gray;
-  background-color: var(--color-background);
+  color: var(--color-text);
+  background-color: var(--achtergrond);
   padding: 1em 1.5em;
   cursor: default;
 }
@@ -410,6 +470,17 @@ nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > button > img {
   width: 2.5em;
 }
 
+@media (prefers-color-scheme: dark) {
+  nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > button > img {
+    filter: brightness(0%) invert(11%) sepia(86%) saturate(5083%)
+      hue-rotate(331deg) brightness(90%) contrast(98%);
+  }
+
+  nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > button > img:hover {
+    filter: none;
+  }
+}
+
 nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section {
   display: flex;
   align-items: center;
@@ -437,6 +508,8 @@ nav
   position: relative;
   width: 40vw;
   max-width: 30em;
+  color: var(--color-text);
+  background-color: var(--achtergrond);
 }
 
 nav
@@ -469,11 +542,23 @@ nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > a > img:hover {
     brightness(78%) contrast(96%);
 }
 
+@media (prefers-color-scheme: dark) {
+  nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > a > img {
+    filter: invert(1);
+  }
+}
+
 nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > button > img {
   background-color: transparent;
   filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(149deg) brightness(93%)
     contrast(100%);
   width: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav > ul:nth-of-type(1) > li:nth-of-type(2) > nav > section > button > img {
+    filter: invert(1);
+  }
 }
 
 nav
@@ -550,7 +635,7 @@ nav > ul > li > nav > div > ul > li > a {
 }
 
 nav > ul > li > nav > div > ul > li > a:hover {
-  color: var(--hamburgermenu);
+  color: var(--hamburgerrood);
 }
 
 nav > ul > li > nav > div > ul > li:nth-of-type(7) {
@@ -569,6 +654,13 @@ nav > ul > li > nav > div > ul > li:nth-of-type(7) img {
   margin-right: 0.5em;
   width: 1em;
   order: -1;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav > ul > li > nav > div > ul > li:nth-of-type(7) img {
+    filter: invert(8%) sepia(68%) saturate(7465%) hue-rotate(350deg)
+      brightness(89%) contrast(109%);
+  }
 }
 
 nav.toonMenu > div {
@@ -637,14 +729,6 @@ nav.toonMenu nav > button > img {
     align-items: center;
   }
 
-  nav > ul > li > nav > div > ul > li:nth-of-type(7) img {
-    filter: invert(28%) sepia(66%) saturate(6124%) hue-rotate(352deg)
-      brightness(90%) contrast(99%);
-    margin-right: 0.5em;
-    width: 1em;
-    order: -1;
-  }
-
   nav > ul > li > nav > div > ul > li:nth-of-type(8) {
     grid-column: 1/-2;
     grid-row: 2/3;
@@ -658,7 +742,13 @@ nav.toonMenu nav > button > img {
 
 /* *********************#HAMBURGERMENU END ************************/
 
-/****************** #HAMBURGERKNOP BRON: ... ******************/
+/****************** #HAMBURGERKNOP ******************/
+
+@media (prefers-color-scheme: dark) {
+  nav > ul:nth-of-type(1) > li:nth-of-type(3):hover {
+    background-color: transparent;
+  }
+}
 
 header > nav > ul > li > nav > button {
   display: grid;
@@ -671,7 +761,7 @@ header > nav > ul > li > nav > button > span {
   grid-column-start: 1;
   width: 1.5em;
   height: 0.25em;
-  background-color: var(--achtergrond);
+  background-color: var(--hamburgericoon);
   transition-duration: 0.2s;
   border-radius: 20px;
 }
@@ -723,7 +813,7 @@ header
 /* ***************#FOOTER***************** */
 
 footer {
-  background-color: white;
+  background-color: var(--achtergrond);
   text-align: center;
   margin: 2em;
 }
@@ -734,7 +824,7 @@ footer section {
 
 footer h3 {
   text-transform: uppercase;
-  color: var(--huiskleur);
+  color: #e31818;
   font-size: 0.8em;
   font-weight: 400;
 }
@@ -767,7 +857,7 @@ footer ul img:hover {
 }
 
 footer section:nth-of-type(3) a {
-  color: var(--zoeken);
+  color: var(--zoekroze);
   font-size: 1em;
   font-weight: 300;
   text-decoration: none;
@@ -777,17 +867,28 @@ footer section:nth-of-type(3) a:hover {
   text-decoration: underline;
 }
 
+@media (prefers-color-scheme: dark) {
+  footer section:nth-of-type(4) a img {
+    filter: invert(1);
+  }
+
+  footer section:nth-of-type(4) a img:hover {
+    filter: invert(19%) sepia(53%) saturate(5803%) hue-rotate(328deg)
+      brightness(75%) contrast(105%);
+  }
+}
+
 footer section:nth-of-type(5) a {
   display: flex;
   height: 3.6em;
   margin: 0;
   width: 10em;
 
-  background-color: var(--zoeken);
+  background-color: var(--zoekroze);
   align-items: center;
 
   text-decoration: none;
-  color: white;
+  color: var(--achtergrond);
   font-size: 0.8em;
   justify-self: center;
   transition: 0.2s;
